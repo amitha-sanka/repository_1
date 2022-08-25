@@ -6,5 +6,3 @@ categories: [markdown]
 title: Amitha's Markdown Post
 ---
 # Amitha's First Markdown Post
-
-asldfjalkj
