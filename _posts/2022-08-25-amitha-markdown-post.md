@@ -3,23 +3,14 @@ toc: true
 layout: post
 description: A minimal example of using markdown with fastpages.
 categories: [markdown]
-title: An Amitha's First Markdown Post
+title: Amitha's First Markdown Post
 ---
-# Amitha's First Markdown Post
 
 ## Basic setup
 
 Jekyll requires blog post files to be named according to the following format:
 
 `YEAR-MONTH-DAY-filename.md`
-
-Grocery List
-- apples
-- tide detergent 
-- bananas
-- strawberries
-- milk
-- almond milk
 
 
 ## Basic formatting
