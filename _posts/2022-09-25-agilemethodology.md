@@ -8,3 +8,6 @@ Agile Methodology Principles:
 
 Git Scrum Board
 ! [Week 6](https://github.com/users/clairehzhao/projects/1/views/1)
+
+Team Project: 
+! [Week 6](https://cdn.discordapp.com/attachments/702253958688800840/1023855601509470249/IMG_8900.png)
