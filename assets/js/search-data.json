@@ -169,6 +169,17 @@
   
 
   
+      ,"page6": {
+          "title": "submenu",
+          "content": "Jupyter Notebook that shows personal usage of Jupyter JavaScript kernel . Link . Post that uses HTML fragments and JavaScript data to build a table . Link .",
+          "url": "https://amitha-sanka.github.io/repository_1/submenu/",
+          "relUrl": "/submenu/",
+          "date": ""
+      }
+      
+  
+
+  
 
   
   
@@ -180,7 +191,7 @@
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://amitha-sanka.github.io/repository_1/robots.txt",
