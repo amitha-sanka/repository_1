@@ -1,8 +1,17 @@
+---
+toc: true
+layout: post
+description: Project Outline.
+categories: [markdown]
+title: Group Project
+comments: true
+---
+
 Week 8: 
 
 ## Project Notes:
 
-Row 1: Program Purpose and Function
+## Row 1: Program Purpose and Function
 Input: Artist Name and Album
 Output: Album duration, album song names, number of songs, album cover photo
 The purpose of this program is to provide users with data about their favorite artists including their albums, songs, and album duration and allow them to choose their favorite artists.
