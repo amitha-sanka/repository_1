@@ -1,6 +1,6 @@
 Week 8: 
 
-Project Notes:
+## Project Notes:
 
 Row 1: Program Purpose and Function
 Input: Artist Name and Album
@@ -34,10 +34,12 @@ Input multiple artists and album. See if each selected data type displays proper
 ![Row_1](https://cdn.discordapp.com/attachments/702253958688800840/1029081650283413715/Screen_Shot_2022-10-10_at_10.17.39_AM.png)
 
 
-![Row_2](https://files.slack.com/files-pri/TUDAF53UJ-F045LF3532S/image.png)
+
+![Row_2](https://cdn.discordapp.com/attachments/702253958688800840/1029082514985324644/IMG_9419.png)
 
 
-![Row_3](https://files.slack.com/files-pri/TUDAF53UJ-F045T4B1PGA/image.png)
+
+![Row_3](https://cdn.discordapp.com/attachments/702253958688800840/1029081651097108490/Screen_Shot_2022-10-10_at_10.18.47_AM.png)
 
 
-![Row_4](https://files.slack.com/files-pri/TUDAF53UJ-F045T28U2LT/image.png)
+![Row_4](https://cdn.discordapp.com/attachments/702253958688800840/1029081651701108747/Screen_Shot_2022-10-10_at_10.19.18_AM.png)
