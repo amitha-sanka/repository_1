@@ -1,0 +1,15 @@
+<p>import requests</p>
+
+<p>url = “https://youtube-music1.p.rapidapi.com/v2/get_album”</p>
+
+<p>querystring = {“album_id”:”MPREb_WALokSukf0y”}</p>
+
+<p>headers = {
+	“X-RapidAPI-Key”: “SIGN-UP-FOR-KEY”,
+	“X-RapidAPI-Host”: “youtube-music1.p.rapidapi.com”
+}</p>
+
+<p>response = requests.request(“GET”, url, headers=headers, params=querystring)</p>
+
+<p>print(response.text)</p>
+
