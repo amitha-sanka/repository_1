@@ -484,40 +484,40 @@ p code { font-size: 19px; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-html, body, input, textarea, select, button { color: #ffffff !important; background-color: #e4cfb7 !important; }
+html, body, input, textarea, select, button { color: #f71a81 !important; background-color: #ffafb7 !important; }
 
 a { color: black !important; }
 
-a:hover { color: #ffffff !important; }
+a:hover { color: #f71a81 !important; }
 
-.site-title, .site-title:visited, .site-nav, .page-link { color: #ffffff !important; }
+.site-title, .site-title:visited, .site-nav, .page-link { color: #f71a81 !important; }
 
-.site-nav { background-color: #e4cfb7; border-color: #e8d6c1; }
+.site-nav { background-color: #ffafb7; border-color: #ffbac1; }
 
-* { scrollbar-color: #e4cfb7 #e8d6c1; }
+* { scrollbar-color: #ffafb7 #ffbac1; }
 
-pre, code { border-color: #e8d6c1; background-color: #EDEDE9; }
+pre, code { border-color: #ffbac1; background-color: #ebd2b8; }
 
-.page-description { color: #e18650; }
+.page-description { color: #e15079; }
 
-.post-meta { color: #ffafb7; }
+.post-meta { color: #faf0f1; }
 
-.post-content p, .post-content li { color: #e18650; }
+.post-content p, .post-content li { color: #e15079; }
 
-.btn { background-color: #EDEDE9 !important; color: #ffffff !important; border-color: #e8d6c1 !important; }
+.btn { background-color: #ebd2b8 !important; color: #f71a81 !important; border-color: #ffbac1 !important; }
 
-.btn:hover { background-color: #e4cfb7 !important; }
+.btn:hover { background-color: #ffafb7 !important; }
 
-table th { background-color: #EDEDE9; border-color: #e8d6c1; color: #ffffff; }
+table th { background-color: #ebd2b8; border-color: #ffbac1; color: #f71a81; }
 
-table td { background-color: #e4cfb7; border-color: #e8d6c1; color: #e18650; }
+table td { background-color: #ffafb7; border-color: #ffbac1; color: #e15079; }
 
-.flash { color: #e4cfb7 !important; filter: brightness(80%); }
+.flash { color: #ffafb7 !important; filter: brightness(80%); }
 
 canvas { filter: invert(100%); }
 
-.post-list > li > div { box-shadow: none !important; background-color: #EDEDE9; border: none !important; }
+.post-list > li > div { box-shadow: none !important; background-color: #ebd2b8; border: none !important; }
 
-li .post-meta-description { color: #e18650 !important; }
+li .post-meta-description { color: #e15079 !important; }
 
 /*# sourceMappingURL=style.css.map */
