@@ -1,4 +1,13 @@
-Week 7: 
+---
+toc: true
+layout: post
+description: AP Classroom 1.1 - 1.3 
+categories: [markdown]
+title: Deployment
+comments: true
+---
+
+# Week 7: 
 
 AP Classroom 1.1 - 1.3 Multiple Choice Results: 
 
