@@ -18,20 +18,53 @@ title: Trimester 1 APCSP Final
 | env | shows setting for cell |
 | git clone | sets up a director of files |
 | cd $project | moves inside that directory of files |
+1. Question: 
 
+- My answer:  
+- Correct answer: 
+- Notes: 
 
+2. Question: 
 
+- My answer:  
+- Correct answer: 
+- Notes: 
 
+3. Question: 
 
+- My answer:  
+- Correct answer: 
+- Notes: 
 
+4. Question: 
 
+- My answer:  
+- Correct answer: 
+- Notes: 
 
+5. Question: 
 
+- My answer:  
+- Correct answer: 
+- Notes: 
 
+6. Question: 
 
+- My answer:  
+- Correct answer: 
+- Notes: 
 
+7. Question: 
 
+- My answer:  
+- Correct answer: 
+- Notes:
 
+8. Question: 
+
+- My answer:  
+- Correct answer: 
+- Notes: 
 
 
 ## How I understood the mistakes? 
