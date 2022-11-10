@@ -6,15 +6,21 @@ permalink: /finalsschedule/
 
 # Trimester 1 Finals Week Schedule 
 
-## Tuesday 
+## Tuesday, November 8, 2022
+
 | Class | Start Time | End Time |
 |---|---|---|
-| AP Calculus | 8:35 | 9:44 |
-| Ethnic Literature | 9:49 | 10:58 |
-| Break | 10:58 | 11:08 |
-| AP Studio Art | 11:13 | 12:52 |
-| Lunch | 12:22 | 12:52 |
-| AP Computer Science Principles | 12:57 | 2:06 |
+| AP Calculus | 8:35 | 9:22 |
+| Ethnic Literature | 9:28 | 10:18 |
+| Break | 10:18 | 10:28 |
+| AP Studio Art | 10:34 | 11:21 |
+| AP Computer Science Princples | 11:27 | 12:14 |
 
 
-## Wednesday 
+## Wednesday, November 9, 2022 
+
+| Class | Start Time | End Time |
+|---|---|---|
+| AP Calculus | 9:25 | 11:55 |
+| Lunch | 11:55 | 12:30 |
+| Ethnic Literature| 12:36 | 2:36 |
