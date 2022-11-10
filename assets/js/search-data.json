@@ -57,10 +57,10 @@
   
     
         ,"post5": {
-            "title": "Api",
-            "content": "import requests . url = “https://youtube-music1.p.rapidapi.com/v2/get_album” . querystring = {“album_id”:”MPREb_WALokSukf0y”} . headers = { “X-RapidAPI-Key”: “SIGN-UP-FOR-KEY”, “X-RapidAPI-Host”: “youtube-music1.p.rapidapi.com” } . response = requests.request(“GET”, url, headers=headers, params=querystring) . print(response.text) .",
-            "url": "https://amitha-sanka.github.io/repository_1/2022/10/09/API.html",
-            "relUrl": "/2022/10/09/API.html",
+            "title": "API",
+            "content": "YouTube Music API . import requests . url = “https://youtube-music1.p.rapidapi.com/v2/search” . querystring = {“query”:”eminem”} . headers = { “X-RapidAPI-Key”: “8ca68e698emsh077b34dcb5cedc7p176bfdjsn4a11c2cb1bef”, “X-RapidAPI-Host”: “youtube-music1.p.rapidapi.com” } . response = requests.request(“GET”, url, headers=headers, params=querystring) . print(response.text) . .",
+            "url": "https://amitha-sanka.github.io/repository_1/markdown/2022/10/09/API.html",
+            "relUrl": "/markdown/2022/10/09/API.html",
             "date": " • Oct 9, 2022"
         }
         
