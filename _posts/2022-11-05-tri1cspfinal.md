@@ -94,4 +94,15 @@ Select two answers.
 
 For the questions I got wrong, I went through my notes that I took on the Collegeboard videos and rewatched some of the videos to recall some of the concepts. In order to gain a greater insight about the binary numbers, I watched a few YouTube videos to understand the concept more. The videos helped, but I am still needing to rely on my notes. 
 
+## AWS Automatic Deployment Extra Credit 
+
+
+
+
+
+
+
+
+
+
 --- 
