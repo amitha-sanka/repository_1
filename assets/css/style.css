@@ -383,7 +383,7 @@ h1:hover .anchor-link, h2:hover .anchor-link, h3:hover .anchor-link, h4:hover .a
 
 .search-results-list-item { padding-bottom: 1rem; }
 
-.search-results-list-item .search-result-title { font-size: 16px; color: #d9230f; }
+.search-results-list-item .search-result-title { font-size: 15px; color: #d9230f; }
 
 .search-result-rel-url { color: silver; }
 
@@ -458,7 +458,7 @@ pre code { font-size: 15px !important; }
 
 .highlight .p { font-weight: bold; color: #66d9ef; }
 
-.highlight .ge { text-decoration: underline; }
+.highlight .ge { text-decoration: bold; }
 
 .highlight .bp { font-style: italic; }
 
@@ -478,9 +478,9 @@ pre code { font-size: 15px !important; }
 
 .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .mo, .highlight .il { color: #bd93f9; }
 
-.highlight .gd { color: #ff5555; }
+.highlight .gd { color: #f8f8f2; }
 
-p code { font-size: 19px; }
+p code { font-size: 22x; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
@@ -498,11 +498,11 @@ a:hover { color: #f71a81 !important; }
 
 pre, code { border-color: #ffbac1; background-color: #ebd2b8; }
 
-.page-description { color: #e15079; }
+.page-description { color: #f38aa8; }
 
 .post-meta { color: #faf0f1; }
 
-.post-content p, .post-content li { color: #e15079; }
+.post-content p, .post-content li { color: #f38aa8; }
 
 .btn { background-color: #ebd2b8 !important; color: #f71a81 !important; border-color: #ffbac1 !important; }
 
@@ -510,7 +510,7 @@ pre, code { border-color: #ffbac1; background-color: #ebd2b8; }
 
 table th { background-color: #ebd2b8; border-color: #ffbac1; color: #f71a81; }
 
-table td { background-color: #ffafb7; border-color: #ffbac1; color: #e15079; }
+table td { background-color: #ffafb7; border-color: #ffbac1; color: #f38aa8; }
 
 .flash { color: #ffafb7 !important; filter: brightness(80%); }
 
@@ -518,6 +518,6 @@ canvas { filter: invert(100%); }
 
 .post-list > li > div { box-shadow: none !important; background-color: #ebd2b8; border: none !important; }
 
-li .post-meta-description { color: #e15079 !important; }
+li .post-meta-description { color: #f38aa8 !important; }
 
 /*# sourceMappingURL=style.css.map */
