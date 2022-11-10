@@ -96,6 +96,16 @@ For the questions I got wrong, I went through my notes that I took on the Colleg
 
 ## AWS Automatic Deployment Extra Credit 
 
+![aws](https://cdn.discordapp.com/attachments/702253958688800840/1040349668611215450/Screen_Shot_2022-11-10_at_11.37.22_AM.png)
+
+
+1. Made a secret with PEM file by converting to base 64 
+2. Added a file to GitHub workflows called deployproject.yml 
+
+- attempted to the AWS Automatic Deployment, but I got stuck at the last step trying to decode the base 64 
+
+
+
 
 
 
