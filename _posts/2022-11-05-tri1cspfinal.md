@@ -22,8 +22,8 @@ title: Trimester 1 APCSP Final
 17. Question: Which of the following is a primary reason for the use of open protocols on the Internet? 
 
 - **My answer:** Open protocols ensure that all Internet users are provided connections with equal bandwidth.
-- Correct answer: Open protocols provide a way to standardize data transmission between different devices.
-- Notes: Open protocol isn't owned by any company and it's not limited to a company’s products. Ultimately, allows data to be standardized. 
+- **Correct answer:** Open protocols provide a way to standardize data transmission between different devices.
+- **Notes:** Open protocol isn't owned by any company and it's not limited to a company’s products. Ultimately, allows data to be standardized. 
 
 
 
@@ -31,20 +31,18 @@ title: Trimester 1 APCSP Final
 
 20. Question: A video game character can face toward one of four directions: north, south, east, and west. Each direction is stored in memory as a sequence of four bits. A new version of the game is created in which the character can face toward one of eight directions, adding northwest, northeast, southwest, and southeast to the original four possibilities. Which of the following statements is true about how the eight directions must be stored in memory? 
 
-- My answer:  Four bits are not enough to store the eight directions. Eight bits are needed for the new version of the game. 
-- Correct answer: Four bits are enough to store the eight directions.
-- Notes: 4 bits are more than enough for the 8 directions. For example, 4 bits = 16 information. 
-
+- **My answer:** Four bits are not enough to store the eight directions. Eight bits are needed for the new version of the game. 
+- **Correct answer:** Four bits are enough to store the eight directions.
+- **Notes:** 4 bits are more than enough for the 8 directions. For example, 4 bits = 16 information. 
 
 
 
 
 24. Question: ![diagram](https://cdn.discordapp.com/attachments/702253958688800840/1040196947472044032/Screen_Shot_2022-11-10_at_1.31.11_AM.png)
 
-- My answer:  Decimal 5, decimal 12, binary 1011, binary 1101
-- Correct answer: Decimal 5, binary 1011, decimal 12, binary 1101
-- Notes: ![binaries](https://cdn.discordapp.com/attachments/702253958688800840/1040197705223381053/Screen_Shot_2022-11-10_at_1.33.52_AM.png)
-
+- **My answer:** Decimal 5, decimal 12, binary 1011, binary 1101
+- **Correct answer:** Decimal 5, binary 1011, decimal 12, binary 1101
+- **Notes:** ![binaries](https://cdn.discordapp.com/attachments/702253958688800840/1040197705223381053/Screen_Shot_2022-11-10_at_1.33.52_AM.png)
 
 
 
@@ -53,9 +51,9 @@ title: Trimester 1 APCSP Final
 For the first 25 units of electricity, the cost is $5 per unit. For units of electricity after the first 25, the cost is $7 per unit.
 Which of the following code segments correctly sets the value of the variable cost to the cost, in dollars, of using numUnits units of electricity?
 
-- My answer: ![pic1](https://cdn.discordapp.com/attachments/702253958688800840/1040199308135374918/Screen_Shot_2022-11-10_at_1.40.33_AM.png)
-- Correct answer: ![pic2](https://cdn.discordapp.com/attachments/702253958688800840/1040199395540471828/Screen_Shot_2022-11-10_at_1.40.21_AM.png)
-- Notes: Be careful, slow down, and notice the numbers and the multiplcation, plus, and minus sign.  
+- **My answer:** ![pic1](https://cdn.discordapp.com/attachments/702253958688800840/1040199308135374918/Screen_Shot_2022-11-10_at_1.40.33_AM.png)
+- **Correct answer:** ![pic2](https://cdn.discordapp.com/attachments/702253958688800840/1040199395540471828/Screen_Shot_2022-11-10_at_1.40.21_AM.png)
+- **Notes:** Be careful, slow down, and notice the numbers and the multiplcation, plus, and minus sign.  
 
 
 
@@ -66,10 +64,10 @@ Which of the following code segments correctly sets the value of maxPS based on 
 
 Select two answers.
 
-- My answer: ![pic3](https://cdn.discordapp.com/attachments/702253958688800840/1040201473839083590/Screen_Shot_2022-11-10_at_1.48.50_AM.png)
-- Correct answer: ![pic4](https://cdn.discordapp.com/attachments/702253958688800840/1040201474229149696/Screen_Shot_2022-11-10_at_1.49.10_AM.png)
+- **My answer:** ![pic3](https://cdn.discordapp.com/attachments/702253958688800840/1040201473839083590/Screen_Shot_2022-11-10_at_1.48.50_AM.png)
+- **Correct answer:** ![pic4](https://cdn.discordapp.com/attachments/702253958688800840/1040201474229149696/Screen_Shot_2022-11-10_at_1.49.10_AM.png)
 ![pic5](https://cdn.discordapp.com/attachments/702253958688800840/1040201565803397120/Screen_Shot_2022-11-10_at_1.49.03_AM.png)
-- Notes: The if statement shows the max and time and the else statement to state the max. 
+- **Notes:** The if statement shows the max and time and the else statement to state the max. 
 
 
 
@@ -77,20 +75,18 @@ Select two answers.
 
 42. Question: ![pic6](https://cdn.discordapp.com/attachments/702253958688800840/1040203063924887594/Screen_Shot_2022-11-10_at_1.55.00_AM.png)
 
-- My answer: 14
-- Correct answer: 16
-- Notes: Needed to correctly input the numbers at the top, carefully into the results area. Since the inputs are 4, 6, and 10, adding all these gives us the result of 16. 
+- **My answer:** 14
+- **Correct answer:** 16
+- **Notes:** Needed to correctly input the numbers at the top, carefully into the results area. Since the inputs are 4, 6, and 10, adding all these gives us the result of 16. 
 
 
 
 
 43. Question: ![pic7](https://cdn.discordapp.com/attachments/702253958688800840/1040203516322512916/Screen_Shot_2022-11-10_at_1.57.14_AM.png)
 
-- My answer: 6
-- Correct answer: 15
-- Notes: The result of the function equals the total of the integers from 0 to 5, equaling 15. 
-
-
+- **My answer:** 6
+- **Correct answer:** 15
+- **Notes:** The result of the function equals the total of the integers from 0 to 5, equaling 15. 
 
 
 
