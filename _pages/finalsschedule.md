@@ -24,3 +24,11 @@ permalink: /finalsschedule/
 | AP Calculus | 9:25 | 11:55 |
 | Lunch | 11:55 | 12:30 |
 | Ethnic Literature| 12:36 | 2:36 |
+
+## Thursday, November 10, 2022 
+
+| Class | Start Time | End Time |
+|---|---|---|
+| AP Studio Art | 8:35 | 10:35 |
+| Lunch | 10:35 | 11:10 |
+| AP Computer Science Principles | 11:16 | 1:16 |
