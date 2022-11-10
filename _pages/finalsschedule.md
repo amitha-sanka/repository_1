@@ -8,6 +8,7 @@ permalink: /finalsschedule/
 
 ## Tuesday, November 8, 2022
 
+
 | Class | Start Time | End Time |
 | --- | --- | --- |
 | AP Calculus | 8:35 | 9:22 |
@@ -19,13 +20,16 @@ permalink: /finalsschedule/
 
 ## Wednesday, November 9, 2022 
 
+
 | Class | Start Time | End Time |
 | --- | --- |--- |
 | AP Calculus | 9:25 | 11:55 |
 | Lunch | 11:55 | 12:30 |
 | Ethnic Literature| 12:36 | 2:36 |
 
+
 ## Thursday, November 10, 2022 
+
 
 | Class | Start Time | End Time |
 | --- | --- | --- |
