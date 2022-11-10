@@ -73,10 +73,10 @@ $dt-green-light: rgb(172, 229, 145);
 
 .highlight {
     background: $dt-code-cell-background !important;
-    color: $dt-gray-light !important;
+    color: $dt-red-light !important;
     pre, code {
      background: $dt-code-cell-background;
-     color: $dt-gray-light;
+     color: $dt-red-light;
      font-size: 110%;
     }
    
@@ -126,7 +126,7 @@ $dt-green-light: rgb(172, 229, 145);
     .py,
     .w,
     .bp {
-      color: $dt-gray-light;
+      color: $dt-red-light;
       background-color: $dt-code-cell-background !important;
     }
  
@@ -136,7 +136,7 @@ $dt-green-light: rgb(172, 229, 145);
  }
   
     .ge {
-      text-decoration: underline;
+      text-decoration: bold;
     }
   
     .bp {
@@ -218,5 +218,5 @@ $dt-green-light: rgb(172, 229, 145);
 }
 
 p code{
-  font-size: 19px;
+  font-size: 22x;
 }
