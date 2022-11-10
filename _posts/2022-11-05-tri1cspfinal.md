@@ -11,7 +11,7 @@ title: Trimester 1 APCSP Final
 | Question | My Answer | Correct Answer | Notes
 | --- | --- | --- | --- | 
 | 1. | lists computer files |
-| cd | changes working directory |
+| 2.  | changes working directory |
 | pwd | prints working directory |
 | echo | used to display a line of text |
 | cat | reads data from file and gives contents as output |
