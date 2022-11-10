@@ -4,8 +4,15 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+## Amitha 
 
+![me](https://cdn.discordapp.com/attachments/702253958688800840/1040120743679242290/image.png)
 
+## Facts about me!! 
 
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+- I am a senior at DNHS 
+- I am 17 years old 
+- My favorite color is pink
+- My favorite TV show is Gossip Girl 
+- One of my favorite artists is Taylor Swift 
+
