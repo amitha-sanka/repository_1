@@ -13,7 +13,7 @@ title: Trimester 1 APCSP Final
 
 - **My answer:** Collaboration that includes diverse backgrounds and perspectives can help the team anticipate the needs of a variety of software users.
 - **Correct answer:** Collaboration that includes diverse backgrounds and perspectives can eliminate the need for software testing.
-- Notes: I misread this question, but working with people that come from different backgrounds helps the team and makes it more convenient for them that it can easily be tested. 
+- **Notes:** I misread this question, but working with people that come from different backgrounds helps the team and makes it more convenient for them that it can easily be tested. 
 
 
 
@@ -94,6 +94,13 @@ Select two answers.
 
 For the questions I got wrong, I went through my notes that I took on the Collegeboard videos and rewatched some of the videos to recall some of the concepts. In order to gain a greater insight about the binary numbers, I watched a few YouTube videos to understand the concept more. The videos helped, but I am still needing to rely on my notes. 
 
+### Khan Academy 
+
+- I used Khan Academy to learn more about Binary Numbers. I found this Khan Academy practice, and read and watched through 
+
+
+
+
 ## AWS Automatic Deployment Extra Credit 
 
 ![aws](https://cdn.discordapp.com/attachments/702253958688800840/1040349668611215450/Screen_Shot_2022-11-10_at_11.37.22_AM.png)
@@ -103,14 +110,6 @@ For the questions I got wrong, I went through my notes that I took on the Colleg
 2. Added a file to GitHub workflows called deployproject.yml 
 
 - attempted to the AWS Automatic Deployment, but I got stuck at the last step trying to decode the base 64 
-
-
-
-
-
-
-
-
 
 
 
