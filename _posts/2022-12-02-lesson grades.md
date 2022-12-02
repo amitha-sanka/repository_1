@@ -8,8 +8,6 @@ title: 3.1 and 3.2 Lesson Grades
 
 # 3.1 and 3.2 Lesson Grades 
 
-
-
 | Name | Grade | Score Reasoning | Grader | 
 | --- | --- | --- | --- |
 | Edwin | 1 | completed everything accurately and did extra binary hacks | Amitha |
@@ -21,13 +19,13 @@ title: 3.1 and 3.2 Lesson Grades
 | Theodore | 0.8 | didn't do 3.2 Video 2 Binary hacks | Amitha |
 | James | 0 | completed everything accurately and blogged about lesson, did extra binary hacks | Amitha |
 | Ahmad | 0 | no submission | Amitha |
-| Samarth | 1 | completed all hacks and notes | Lina |
+| Samarth | 1 | completed all hacks and notes well and in good detail | Lina |
 | Arnav | 1.1 | did extra binary hacks, reflected about each individual lesson, and completed everything |Amitha |
 | Benjamin | 0.8 | lots of notes, didn't do 3.2 Video 2 binary hacks | Amitha |
 | Krishiv | 1.1 | completed everything accurately and blogged about lesson, did extra binary hacks | Amitha |
 | Ryan | 0.8 | missing hacks, blogged about lessons learned | Amitha |
 | Raunak | 1 | completed everything accurately and did extra binary hacks | Amitha |
-| Nicolas | __ | _____ | Naja |
+| Nicolas | 1 | completed everything | Naja |
 | Caleb | 0 | no submission | Amitha |
 | Justin | 0 | no submission | Amitha |
 | Varaprasad | 0.8 | didn't do 3.2 Video 2 HW/Hacks | Amitha |
@@ -41,6 +39,6 @@ title: 3.1 and 3.2 Lesson Grades
 | Vardaan | 0.8 | didn't do 3.2 Video 2 Binary hacks | Amitha |
 | Rohin | 0.7 | didn't do 3.2 Video 2 Binary hacks, didn't do 3.1 Video 2 Hacks, skipped | Amitha |
 | Colin | 1 | completed all sections accurately, did extra binary hacks | Amitha |
-| Leonard | 1 | _____ | Joselyn
+| Leonard | 1 | took thourough notes, completed and explained every practice/homework ?s, did extra binary | Joselyn
 | Navan | 0 | submitted wrong hacks, submitted 3.3 and 3.4 hacks | Amitha |
 | Hae Ryn | 1 | completed everything accurately and did extra binary hacks | Amitha |
