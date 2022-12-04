@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -335,7 +335,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="c1"># Practice with these statements</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Practice with these statements</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="mi">20</span> <span class="o">==</span> <span class="mi">20</span><span class="p">)</span> <span class="c1"># How can you change the operator to print a value of False?</span>
 
@@ -349,6 +349,22 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>True
+False
+False
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -375,26 +391,26 @@ window.onload = wrap_img;
 }</li>
 </ul>
 <ol>
-<li>Nice job!</li>
+<li>Nice job! </li>
 <li>Display</li>
-<li>Please schedule a retake.</li>
+<li>Please schedule a retake. √</li>
 <li>75</li>
 </ol>
 <p><strong>2. How is an if statement different from an if-else statement.</strong></p>
 <ol>
 <li>Extra words.</li>
-<li>An if statement will only go through a process if a condition is met. An if-else statement will go through code no matter the conditions.</li>
+<li>An if statement will only go through a process if a condition is met. An if-else statement will go through code no matter the conditions. √</li>
 <li>They are the exact same.</li>
 <li>An if statement will go through the entire code segment every single time and the if-else statement is always used in an algorithm, no matter the conditions.</li>
 </ol>
 <p><strong>3. What would be most appropriate for this situation? Ben wants to check his bank account. If his car fuel is full, he will go to the bank. Otherwise, he will go home. If he goes to the bank, he will withdraw money only if his balance is above $1000.</strong></p>
 <ol>
 <li>If statement</li>
-<li>If-else statement</li>
+<li>If-else statement √</li>
 </ol>
 <p><strong>4. What would be most appropriate for this situation? Luke wants to play basketball. If it is sunny outside he will go to the park to play basketball.</strong></p>
 <ol>
-<li>If statement</li>
+<li>If statement √</li>
 <li>If-else statement</li>
 </ol>
 <h2 id="Using-Python">
@@ -410,19 +426,43 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="n">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"lion"</span><span class="p">,</span> <span class="s2">"tiger"</span><span class="p">,</span> <span class="s2">"wildebeest"</span><span class="p">,</span> <span class="s2">"shark"</span><span class="p">,</span> <span class="s2">"jellyfish"</span><span class="p">,</span> <span class="s2">"blobfish"</span><span class="p">,</span> <span class="s2">"raven"</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">animals</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"lion"</span><span class="p">,</span> <span class="s2">"camel"</span><span class="p">,</span> <span class="s2">"tiger"</span><span class="p">,</span> <span class="s2">"wildebeest"</span><span class="p">,</span> <span class="s2">"shark"</span><span class="p">,</span> <span class="s2">"jellyfish"</span><span class="p">,</span> <span class="s2">"blobfish"</span><span class="p">,</span> <span class="s2">"raven"</span><span class="p">]</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">animals</span><span class="p">:</span>
     <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="s2">"shark"</span><span class="p">:</span> <span class="c1"># What boolean value does this statement cause?</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Fun Fact: The smallest shark is the dwarf lantern shark, and it is small enough to hold in your hand!"</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">animals</span><span class="p">:</span> 
+    <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="s2">"camel"</span><span class="p">:</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"If an animal lives in the desert, the animal will see spiders and snakes! "</span><span class="p">)</span>
 <span class="c1"># Practice</span>
 <span class="c1"># Using only one more if statement, alter the code to print out a statement saying if an animal lives in the desert, based on booleans</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>lion
+camel
+tiger
+wildebeest
+Fun Fact: The smallest shark is the dwarf lantern shark, and it is small enough to hold in your hand!
+jellyfish
+blobfish
+raven
+If an animal lives in the desert, the animal will see spiders and snakes! 
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -458,10 +498,52 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">chicken_alfredo</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'meat'</span><span class="p">:</span> <span class="s1">'chicken'</span> <span class="p">,</span> <span class="s1">'time to prepare'</span><span class="p">:</span> <span class="s1">'60 minutes'</span><span class="p">}</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">chicken_alfredo</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">chicken_alfredo</span><span class="p">))</span>
+
+
+<span class="n">cheese_quesadilla</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'meat'</span><span class="p">:</span> <span class="s1">'none'</span> <span class="p">,</span> <span class="s1">'time to prepare'</span><span class="p">:</span> <span class="s1">'10 minutes'</span><span class="p">}</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">cheese_quesadilla</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">cheese_quesadilla</span><span class="p">))</span>
+
+
+
+<span class="n">beef_wellington</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'meat'</span><span class="p">:</span> <span class="s1">'beef'</span> <span class="p">,</span> <span class="s1">'time to prepare'</span><span class="p">:</span> <span class="s1">'150 minutes'</span><span class="p">}</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">beef_wellington</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">beef_wellington</span><span class="p">))</span>
+
+<span class="n">D</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'chicken_alfredo'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'meat'</span><span class="p">:</span> <span class="s1">'chicken'</span> <span class="p">,</span> <span class="s1">'time to prepare'</span><span class="p">:</span> <span class="s1">'60 minutes'</span><span class="p">},</span> 
+     <span class="s1">'cheese_quesadilla'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'meat'</span><span class="p">:</span> <span class="s1">'none'</span> <span class="p">,</span> <span class="s1">'time to prepare'</span><span class="p">:</span> <span class="s1">'10 minutes'</span><span class="p">},</span>
+     <span class="s1">'beef_wellington'</span><span class="p">:</span> <span class="p">{</span><span class="s1">'meat'</span><span class="p">:</span> <span class="s1">'beef'</span> <span class="p">,</span> <span class="s1">'time to prepare'</span><span class="p">:</span> <span class="s1">'150 minutes'</span><span class="p">}}</span>
+<span class="n">D</span><span class="p">[</span><span class="s1">'chicken_alfredo'</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'meat'</span><span class="p">:</span> <span class="s1">'no meat at home'</span><span class="p">,</span> <span class="s1">'time to prepare'</span><span class="p">:</span> <span class="s1">'30 minutes'</span><span class="p">}</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">D</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{'meat': 'chicken', 'time to prepare': '60 minutes'}
+&lt;class 'dict'&gt;
+{'meat': 'none', 'time to prepare': '10 minutes'}
+&lt;class 'dict'&gt;
+{'meat': 'beef', 'time to prepare': '150 minutes'}
+&lt;class 'dict'&gt;
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
