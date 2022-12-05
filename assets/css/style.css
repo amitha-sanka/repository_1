@@ -498,11 +498,11 @@ a:hover { color: #d52a7a !important; }
 
 pre, code { border-color: #ffbcd0; background-color: #ebd2b8; }
 
-.page-description { color: #ffcad4; }
+.page-description { color: #ff5697; }
 
-.post-meta { color: #ff5697; }
+.post-meta { color: #ffcad4; }
 
-.post-content p, .post-content li { color: #ffcad4; }
+.post-content p, .post-content li { color: #ff5697; }
 
 .btn { background-color: #ebd2b8 !important; color: #d52a7a !important; border-color: #ffbcd0 !important; }
 
@@ -510,7 +510,7 @@ pre, code { border-color: #ffbcd0; background-color: #ebd2b8; }
 
 table th { background-color: #ebd2b8; border-color: #ffbcd0; color: #d52a7a; }
 
-table td { background-color: #ffb1c8; border-color: #ffbcd0; color: #ffcad4; }
+table td { background-color: #ffb1c8; border-color: #ffbcd0; color: #ff5697; }
 
 .flash { color: #ffb1c8 !important; filter: brightness(80%); }
 
@@ -518,6 +518,6 @@ canvas { filter: invert(100%); }
 
 .post-list > li > div { box-shadow: none !important; background-color: #ebd2b8; border: none !important; }
 
-li .post-meta-description { color: #ffcad4 !important; }
+li .post-meta-description { color: #ff5697 !important; }
 
 /*# sourceMappingURL=style.css.map */
