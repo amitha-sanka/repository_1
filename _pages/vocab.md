@@ -5,10 +5,10 @@ permalink: /unitvocabulary/
 ---
 # Unit 2 Binary & Data 
 ---------------
-<mark>Bits:<mark> a 0/1 value
-<mark>Bytes:<mark> 8 bits
-<mark>Hexadecimal:<mark> name of the numbering system that is base 16
-<mark>Nibbles:<mark> four-bit binary number
+- <mark>Bits:<mark> a 0/1 value
+- <mark>Bytes:<mark> 8 bits
+- <mark>Hexadecimal:<mark> name of the numbering system that is base 16
+- <mark>Nibbles:<mark> four-bit binary number
 
 ## Binary Numbers:
 - <mark>Unsigned Integer:<mark> 32-bit non-negative integer(0 or positive numbers) in the range of 0 to 2^32-1
