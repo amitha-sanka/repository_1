@@ -1,7 +1,7 @@
 ---
-title: Unit Vocabulary 
+title: APCSP Vocabulary 
 layout: page
-permalink: /unitvocabulary/
+permalink: /APCSPVocabulary/
 ---
 # Unit 2 Binary & Data 
 ---------------
