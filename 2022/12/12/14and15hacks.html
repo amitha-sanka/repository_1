@@ -227,16 +227,16 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> <span class="c1">#random library imported in order to use it's functions</span>
 
-<span class="n">names_string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Give me everybody's names, seperated by a comma."</span><span class="p">)</span>
-<span class="n">names</span> <span class="o">=</span> <span class="n">names_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">","</span><span class="p">)</span>
+<span class="n">names_string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Give me everybody's names, seperated by a comma."</span><span class="p">)</span> <span class="c1">#inputs names to make a list of names</span>
+<span class="n">names</span> <span class="o">=</span> <span class="n">names_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">","</span><span class="p">)</span> <span class="c1">#splits everyone's names with commas </span>
 
-<span class="n">num_items</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+<span class="n">num_items</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">)</span> <span class="c1">#creates a list of names </span>
 
 <span class="n">random_choice</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">num_items</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="c1">#pick a random choice from a list of strings</span>
 
-<span class="n">person_who_will_pay</span> <span class="o">=</span> <span class="n">names</span><span class="p">[</span><span class="n">random_choice</span><span class="p">]</span>
+<span class="n">person_who_will_pay</span> <span class="o">=</span> <span class="n">names</span><span class="p">[</span><span class="n">random_choice</span><span class="p">]</span> <span class="c1">#chooses random name</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">person_who_will_pay</span><span class="si">}</span><span class="s2"> is going to buy the meal today!"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">person_who_will_pay</span><span class="si">}</span><span class="s2"> is going to buy the meal today!"</span><span class="p">)</span> <span class="c1">#output received </span>
 </pre></div>
 
     </div>
@@ -249,7 +249,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre> is going to buy the meal today!
+<pre>j is going to buy the meal today!
 </pre>
 </div>
 </div>
@@ -278,18 +278,14 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
 
-<span class="n">names_string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"A, B, C, D, E, F, G, H, I, J, K, L, M, N, O"</span><span class="p">)</span>
-<span class="n">names</span> <span class="o">=</span> <span class="n">names_string</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">","</span><span class="p">)</span>
+<span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Bob"</span><span class="p">,</span> <span class="s2">"Bill"</span><span class="p">,</span> <span class="s2">"Billy"</span><span class="p">,</span> <span class="s2">"Bobby"</span><span class="p">,</span> <span class="s2">"Sally"</span><span class="p">,</span> <span class="s2">"Sean"</span><span class="p">,</span> <span class="s2">"John"</span><span class="p">,</span> <span class="s2">"Johnny"</span><span class="p">,</span> <span class="s2">"Jonny"</span><span class="p">,</span> <span class="s2">"Jonathan"</span><span class="p">,</span> <span class="s2">"Joe"</span><span class="p">,</span> <span class="s2">"Joel"</span><span class="p">,</span> <span class="s2">"Jon"</span><span class="p">,</span> <span class="s2">"June"</span><span class="p">,</span> <span class="s2">"Jill"</span><span class="p">]</span>
 
-<span class="n">num_items</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">names</span><span class="p">))</span>
 
-<span class="n">random_choice</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">num_items</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="c1">#pick a random choice from a list of strings</span>
-
-<span class="n">five_random_names</span> <span class="o">=</span> <span class="n">names</span><span class="p">[</span><span class="n">random_choice</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">five_random_names</span><span class="si">}</span><span class="s2"> were five of the random names from a list of at least 15 names."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"These are your 5 random names!"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -302,7 +298,12 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>k were five of the random names from a list of at least 15 names.
+<pre>Joe
+Joe
+Johnny
+Billy
+Bobby
+These are your 5 random names!
 </pre>
 </div>
 </div>
@@ -319,6 +320,35 @@ window.onload = wrap_img;
 <ol>
 <li>Create a program to simulate a dice game where each player rolls two fair dice (6 sides); the player with the greater sum wins</li>
 </ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">dice</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">dicerolls</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">dice</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="o">+</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+        <span class="n">dicerolls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">dice</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">dicerolls</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p><mark>EXTRA-CREDIT OPPORTUNITY</mark>:</p>
 <ol>
 <li>Create a program to randomly generate one of those 5x5 square CollegeBoard robot courses frequently seen in these lessons. Here are the criteria:</li>
