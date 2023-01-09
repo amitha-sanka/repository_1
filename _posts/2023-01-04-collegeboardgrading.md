@@ -33,3 +33,12 @@ one showing where the student-developed procedure is being called, describes wha
 | Algorithm Implementation | includes a program code segment of a student-developed algorithm that includes sequencing, selection, iteration, explains in detailed steps how the identified algorithm works in enough detail that someone else could recreate it.| 1 | 1 |
 | Testing | describes two calls to the selected procedure identified in written response 3c and each call must pass a different argument(s) that causes a different segment of code in the algorithm to execute, describes the condition(s) being tested by each call to the procedure.
 identifies the result of each call. | 1 | 1 |
+
+# Reflection
+
+After looking at student 1 and 2's projects and Collegeboard's grading, I learned... 
+- Speak clearly 
+- Keep the video concise 
+- Use user input 
+- In the written response, be clear when discussing code segments
+- To make the video effective, be quick 
