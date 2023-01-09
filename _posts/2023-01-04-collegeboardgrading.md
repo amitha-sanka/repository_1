@@ -10,7 +10,8 @@ title: CPT Grading
 
 | Category | Requirements | Student Score | CB Grade | 
 | --- | --- | --- | --- |
-| Program Purpose and Function | The video demonstrates the running of the program including:
+| Program Purpose and Function | 
+The video demonstrates the running of the program including: 
 input: program functionality, output, describes the overall purpose of the program, describes what functionality of the program is demonstrated in the video, describes the input and output of the program demonstrated in the video. | 1 | 0 |
 | Data Abstraction | includes two program code segments: one that shows how data has been stored in this list (or other collection type). one that shows the data in this same list being used as part of fulfilling the program’s purpose. identifies the name of the variable representing the list being used in this response.  describes what the data contained in this list is representing in the program. | 1 | 1 |
 | Managing Complexity | includes a program code segment that shows a list being used to manage complexity in the program. explains how the named, selected list manages complexity in the program code by explaining why the program code could not be written, or how it would be written differently, without using this list. | 0 | 0 |
