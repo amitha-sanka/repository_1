@@ -484,13 +484,13 @@ p code { font-size: 22x; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-html, body, input, textarea, select, button { color: #fc045b !important; background-color: #ffb5cb !important; }
+html, body, input, textarea, select, button { color: #e40587 !important; background-color: #ffb5cb !important; }
 
 a { color: #ed1789 !important; }
 
-a:hover { color: #fc045b !important; }
+a:hover { color: #e40587 !important; }
 
-.site-title, .site-title:visited, .site-nav, .page-link { color: #fc045b !important; }
+.site-title, .site-title:visited, .site-nav, .page-link { color: #e40587 !important; }
 
 .site-nav { background-color: #ffb5cb; border-color: #ffbfd2; }
 
@@ -504,11 +504,11 @@ pre, code { border-color: #ffbfd2; background-color: #efe7de; }
 
 .post-content p, .post-content li { color: #ff79ac; }
 
-.btn { background-color: #efe7de !important; color: #fc045b !important; border-color: #ffbfd2 !important; }
+.btn { background-color: #efe7de !important; color: #e40587 !important; border-color: #ffbfd2 !important; }
 
 .btn:hover { background-color: #ffb5cb !important; }
 
-table th { background-color: #efe7de; border-color: #ffbfd2; color: #fc045b; }
+table th { background-color: #efe7de; border-color: #ffbfd2; color: #e40587; }
 
 table td { background-color: #ffb5cb; border-color: #ffbfd2; color: #ff79ac; }
 
