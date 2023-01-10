@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description: Graded Homework 
+description: Looking at Collegeboard Scoring
 categories: [markdown]
 title: CPT Grading
 ---
