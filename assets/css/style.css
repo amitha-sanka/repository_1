@@ -484,19 +484,19 @@ p code { font-size: 22x; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-html, body, input, textarea, select, button { color: #e40587 !important; background-color: #ffb5cb !important; }
+html, body, input, textarea, select, button { color: #e40587 !important; background-color: #e2537e !important; }
 
-a { color: #ed1789 !important; }
+a { color: black !important; }
 
 a:hover { color: #e40587 !important; }
 
 .site-title, .site-title:visited, .site-nav, .page-link { color: #e40587 !important; }
 
-.site-nav { background-color: #ffb5cb; border-color: #ffbfd2; }
+.site-nav { background-color: #e2537e; border-color: #e66b90; }
 
-* { scrollbar-color: #ffb5cb #ffbfd2; }
+* { scrollbar-color: #e2537e #e66b90; }
 
-pre, code { border-color: #ffbfd2; background-color: #efe7de; }
+pre, code { border-color: #e66b90; background-color: #efe7de; }
 
 .page-description { color: #ff79ac; }
 
@@ -504,15 +504,15 @@ pre, code { border-color: #ffbfd2; background-color: #efe7de; }
 
 .post-content p, .post-content li { color: #ff79ac; }
 
-.btn { background-color: #efe7de !important; color: #e40587 !important; border-color: #ffbfd2 !important; }
+.btn { background-color: #efe7de !important; color: #e40587 !important; border-color: #e66b90 !important; }
 
-.btn:hover { background-color: #ffb5cb !important; }
+.btn:hover { background-color: #e2537e !important; }
 
-table th { background-color: #efe7de; border-color: #ffbfd2; color: #e40587; }
+table th { background-color: #efe7de; border-color: #e66b90; color: #e40587; }
 
-table td { background-color: #ffb5cb; border-color: #ffbfd2; color: #ff79ac; }
+table td { background-color: #e2537e; border-color: #e66b90; color: #ff79ac; }
 
-.flash { color: #ffb5cb !important; filter: brightness(80%); }
+.flash { color: #e2537e !important; filter: brightness(80%); }
 
 canvas { filter: invert(100%); }
 
