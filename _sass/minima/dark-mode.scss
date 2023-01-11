@@ -1,5 +1,5 @@
-$high-emph: #e40587;
-$med-emph: #ff79ac; 
+$high-emph: #000000;
+$med-emph: #ffc0d8; 
 $low-emph: #ffcad4;
 $dark-grey : #ffcddc; #background
 $overlay: #efe7de;
@@ -11,7 +11,7 @@ html, body, input, textarea, select, button {
 }
 
 a {
-    color: rgb(0, 0, 0) !important;
+    color: rgb(255, 110, 190) !important;
 }
 
 a:hover {
