@@ -53,5 +53,7 @@ Testing | ✅ describes two calls to the selected procedure identified in writte
 
 # Reflection 
 
-- In order to receive a singular point student needs to meet ALL the criteria
-- 
+- In order to receive a singular point student needs to meet ALL the criteria. 
+- After grading submissions and using the CollegeBoard criteria six times, I have a good grasp on what CollegeBoard is looking for. 
+- Having organized work is conveninet for the student as well as the grader. 
+- Have a defined purpose throughout the entirety of the project. 
