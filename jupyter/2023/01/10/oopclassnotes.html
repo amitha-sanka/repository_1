@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      6 min read
     
 </span></p>
 
@@ -145,15 +145,19 @@ window.onload = wrap_img;
 <span class="c1"># In this case, imports are focused on generating hash code to protect passwords.</span>
 <span class="kn">from</span> <span class="nn">werkzeug.security</span> <span class="kn">import</span> <span class="n">generate_password_hash</span><span class="p">,</span> <span class="n">check_password_hash</span>
 <span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span> 
 
 <span class="c1"># Define a User Class/Template</span>
 <span class="c1"># -- A User represents the data we want to manage</span>
 <span class="k">class</span> <span class="nc">User</span><span class="p">:</span>    
     <span class="c1"># constructor of a User object, initializes the instance variables within object (self)</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">password</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">graduationclass</span><span class="p">,</span> <span class="n">birth</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span> <span class="c1"># name, uid, and password are presets for each user</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>    <span class="c1"># variables with self prefix become part of the object, </span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_uid</span> <span class="o">=</span> <span class="n">uid</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">set_password</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_birth</span> <span class="o">=</span> <span class="n">birth</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_age</span> <span class="o">=</span> <span class="n">age</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_graduationclass</span> <span class="o">=</span> <span class="n">graduationclass</span>
 
     <span class="c1"># a name getter method, extracts name from object</span>
     <span class="nd">@property</span>
@@ -194,17 +198,43 @@ window.onload = wrap_img;
         <span class="n">result</span> <span class="o">=</span> <span class="n">check_password_hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_password</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">result</span>
     
+    <span class="nd">@property</span> 
+    <span class="k">def</span> <span class="nf">graduationclass</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_graduationclass</span>
+
+    <span class="nd">@graduationclass</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">graduationclass</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">graduationclass</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_graduationclass</span> <span class="o">=</span> <span class="n">graduationclass</span>
+
+    
     <span class="c1"># output content using str(object) in human readable form, uses getter</span>
     <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s1">'name: "</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1">", id: "</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">uid</span><span class="si">}</span><span class="s1">", psw: "</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">password</span><span class="si">}</span><span class="s1">"'</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">'name: "</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1">", id: "</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">uid</span><span class="si">}</span><span class="s1">", psw: "</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">password</span><span class="si">}</span><span class="s1">", graduationclass: "</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">graduationclass</span><span class="si">}</span><span class="s1">", birth: "</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">birth</span><span class="si">}</span><span class="s1">", age: "</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="si">}</span><span class="s1">"'</span>
 
     <span class="c1"># output command to recreate the object, uses attribute directly</span>
     <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s1">'Person(name=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="si">}</span><span class="s1">, uid=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_uid</span><span class="si">}</span><span class="s1">, password=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_password</span><span class="si">}</span><span class="s1">)'</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">'Person(name=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="si">}</span><span class="s1">, uid=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_uid</span><span class="si">}</span><span class="s1">, password=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_password</span><span class="si">}</span><span class="s1">, graduationclass=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_graduationclass</span><span class="si">}</span><span class="s1">, birth=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">birth</span><span class="si">}</span><span class="s1">, age=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_age</span><span class="si">}</span><span class="s1">)'</span> <span class="c1"># return will store the name back to you but not print it</span>
 
+ <span class="c1"># a name getter method, extracts date of birth from object</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">birth</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_birth</span>
+    
+    <span class="c1"># a setter function, allows date of birth to be updated after initial object creation</span>
+    <span class="nd">@birth</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">birth</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">birth</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_birth</span> <span class="o">=</span> <span class="n">birth</span>
+
+    <span class="nd">@property</span> 
+    <span class="k">def</span> <span class="nf">age</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_age</span>
+
+    <span class="nd">@age</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">age</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_age</span> <span class="o">=</span> <span class="n">age</span>
 
 <span class="c1"># tester method to print users</span>
-<span class="k">def</span> <span class="nf">tester</span><span class="p">(</span><span class="n">users</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">psw</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">tester</span><span class="p">(</span><span class="n">users</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">psw</span><span class="p">,</span> <span class="n">graduationclass</span><span class="p">,</span> <span class="n">birth</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
     <span class="n">result</span> <span class="o">=</span> <span class="kc">None</span>
     <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">:</span>
         <span class="c1"># test for match in database</span>
@@ -214,32 +244,42 @@ window.onload = wrap_img;
         <span class="c1"># print using __str__ method</span>
         <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">user</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">result</span>
-        
+
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+
+<span class="k">def</span> <span class="nf">agecalculation</span><span class="p">(</span><span class="n">born</span><span class="p">):</span>
+    <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">today</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="n">born</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="p">((</span><span class="n">today</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">today</span><span class="o">.</span><span class="n">day</span><span class="p">)</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">born</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">born</span><span class="o">.</span><span class="n">day</span><span class="p">))</span> 
+
 
 <span class="c1"># place tester code inside of special if!  This allows include without tester running</span>
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span> <span class="c1"># to see the actual code, it is important bc everything under here is only rn in the file it is in</span>
 
     <span class="c1"># define user objects</span>
-    <span class="n">u1</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Amitha'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'amitha'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'12'</span><span class="p">)</span>
-    <span class="n">u2</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Joselyn'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'joselyn'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'13'</span><span class="p">)</span>
-    <span class="n">u3</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Lina'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'lina'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'14'</span><span class="p">)</span>
-    <span class="n">u4</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Naja'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'naja'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'15'</span><span class="p">)</span>
-    <span class="n">u5</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Mr.Yeung'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'yeung'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'16'</span><span class="p">)</span>
-
+    <span class="n">u1</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Amitha'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'amitha'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'12'</span> <span class="p">,</span> <span class="n">graduationclass</span><span class="o">=</span><span class="mi">2023</span><span class="p">,</span> <span class="n">birth</span><span class="o">=</span><span class="p">[</span><span class="mi">2005</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">31</span><span class="p">],</span> <span class="n">age</span><span class="o">=</span> <span class="n">agecalculation</span><span class="p">(</span><span class="n">date</span><span class="p">(</span><span class="mi">2005</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">31</span><span class="p">)))</span>
+    <span class="n">u2</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Joselyn'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'joselyn'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'13'</span> <span class="p">,</span> <span class="n">graduationclass</span><span class="o">=</span><span class="mi">2024</span><span class="p">,</span> <span class="n">birth</span><span class="o">=</span><span class="p">[</span><span class="mi">2006</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">15</span><span class="p">],</span> <span class="n">age</span><span class="o">=</span> <span class="n">agecalculation</span><span class="p">(</span><span class="n">date</span><span class="p">(</span><span class="mi">2006</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">15</span><span class="p">)))</span>
+    <span class="n">u3</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Lina'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'lina'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'14'</span> <span class="p">,</span> <span class="n">graduationclass</span><span class="o">=</span><span class="mi">2024</span><span class="p">,</span> <span class="n">birth</span><span class="o">=</span><span class="p">[</span><span class="mi">2006</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span> <span class="n">age</span><span class="o">=</span> <span class="n">agecalculation</span><span class="p">(</span><span class="n">date</span><span class="p">(</span><span class="mi">2006</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">20</span><span class="p">)))</span>
+    <span class="n">u4</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Naja'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'naja'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'15'</span><span class="p">,</span> <span class="n">graduationclass</span><span class="o">=</span><span class="mi">2025</span><span class="p">,</span> <span class="n">birth</span><span class="o">=</span><span class="p">[</span><span class="mi">2007</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="n">age</span><span class="o">=</span> <span class="n">agecalculation</span><span class="p">(</span><span class="n">date</span><span class="p">(</span><span class="mi">2007</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">)))</span>
+    <span class="n">u5</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Mr.Yeung'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'yeung'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'16'</span><span class="p">,</span> <span class="n">graduationclass</span><span class="o">=</span><span class="mi">2015</span><span class="p">,</span> <span class="n">birth</span><span class="o">=</span><span class="p">[</span><span class="mi">1995</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="n">age</span><span class="o">=</span> <span class="n">agecalculation</span><span class="p">(</span><span class="n">date</span><span class="p">(</span><span class="mi">2006</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">15</span><span class="p">)))</span>
     <span class="c1"># put user objects in list for convenience</span>
-    <span class="n">users</span> <span class="o">=</span> <span class="p">[</span><span class="n">u1</span><span class="p">,</span> <span class="n">u2</span><span class="p">,</span> <span class="n">u3</span><span class="p">,</span> <span class="n">u4</span><span class="p">,</span> <span class="n">u5</span><span class="p">]</span>
+    <span class="n">users</span> <span class="o">=</span> <span class="p">[</span><span class="n">u1</span><span class="p">,</span> <span class="n">u2</span><span class="p">,</span> <span class="n">u3</span><span class="p">,</span> <span class="n">u4</span><span class="p">]</span>
 
+    <span class="c1"># print(u1.name + " is " + agecalculation(u1.birth) + " years old")</span>
     <span class="c1"># Find user</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Test 1, find user 3"</span><span class="p">)</span>
-    <span class="n">u</span> <span class="o">=</span> <span class="n">tester</span><span class="p">(</span><span class="n">users</span><span class="p">,</span> <span class="n">u3</span><span class="o">.</span><span class="n">uid</span><span class="p">,</span> <span class="s2">"14"</span><span class="p">)</span>
 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Test 1, find user 1"</span><span class="p">)</span>
+    <span class="n">u</span> <span class="o">=</span> <span class="n">tester</span><span class="p">(</span><span class="n">users</span><span class="p">,</span> <span class="n">u1</span><span class="o">.</span><span class="n">uid</span><span class="p">,</span> <span class="s2">"12"</span><span class="p">,</span> <span class="n">u1</span><span class="o">.</span><span class="n">graduationclass</span><span class="p">,</span> <span class="n">u1</span><span class="o">.</span><span class="n">birth</span><span class="p">,</span> <span class="n">u1</span><span class="o">.</span><span class="n">age</span> <span class="p">)</span>
 
+    
     <span class="c1"># Change user</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"Test 2, change user 3"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Test 2, change user 1 from Amitha to Lina"</span><span class="p">)</span>
     <span class="n">u</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">"Lina"</span>
-    <span class="n">u</span><span class="o">.</span><span class="n">uid</span> <span class="o">=</span> <span class="s2">"lina"</span>
+    <span class="n">u</span><span class="o">.</span><span class="n">uid</span> <span class="o">=</span> <span class="s2">"linaawad7"</span>
     <span class="n">u</span><span class="o">.</span><span class="n">set_password</span><span class="p">(</span><span class="s2">"14"</span><span class="p">)</span>
-    <span class="n">u</span> <span class="o">=</span> <span class="n">tester</span><span class="p">(</span><span class="n">users</span><span class="p">,</span> <span class="n">u</span><span class="o">.</span><span class="n">uid</span><span class="p">,</span> <span class="s2">"14"</span><span class="p">)</span>
+    <span class="n">u</span><span class="o">.</span><span class="n">graduationclass</span> <span class="o">=</span> <span class="mi">2024</span>
+    <span class="n">u</span><span class="o">.</span><span class="n">birth</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2006</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+    <span class="n">u</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">agecalculation</span><span class="p">(</span><span class="n">date</span><span class="p">(</span><span class="mi">2006</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+    <span class="n">u</span> <span class="o">=</span> <span class="n">tester</span><span class="p">(</span><span class="n">users</span><span class="p">,</span> <span class="n">u</span><span class="o">.</span><span class="n">uid</span><span class="p">,</span> <span class="s2">"12"</span><span class="p">,</span> <span class="n">u</span><span class="o">.</span><span class="n">graduationclass</span><span class="p">,</span> <span class="n">u</span><span class="o">.</span><span class="n">birth</span><span class="p">,</span> <span class="n">u</span><span class="o">.</span><span class="n">age</span><span class="p">)</span>
 
 
     <span class="c1"># Make dictionary</span>
@@ -267,22 +307,20 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Test 1, find user 3
-name: "Amitha", id: "amitha", psw: "sha256$8qj..."
-name: "Joselyn", id: "joselyn", psw: "sha256$Qkg..."
-* name: "Lina", id: "lina", psw: "sha256$iNc..."
-name: "Naja", id: "naja", psw: "sha256$YPG..."
-name: "Mr.Yeung", id: "yeung", psw: "sha256$2VD..."
-Test 2, change user 3
-name: "Amitha", id: "amitha", psw: "sha256$8qj..."
-name: "Joselyn", id: "joselyn", psw: "sha256$Qkg..."
-* name: "Lina", id: "lina", psw: "sha256$dKv..."
-name: "Naja", id: "naja", psw: "sha256$YPG..."
-name: "Mr.Yeung", id: "yeung", psw: "sha256$2VD..."
+<pre>Test 1, find user 1
+* name: "Amitha", id: "amitha", psw: "sha256$Djj...", graduationclass: "2023", birth: "[2005, 10, 31]", age: "17"
+name: "Joselyn", id: "joselyn", psw: "sha256$DRe...", graduationclass: "2024", birth: "[2006, 9, 15]", age: "16"
+name: "Lina", id: "lina", psw: "sha256$2w2...", graduationclass: "2024", birth: "[2006, 2, 20]", age: "16"
+name: "Naja", id: "naja", psw: "sha256$7W8...", graduationclass: "2025", birth: "[2007, 3, 8]", age: "15"
+Test 2, change user 1 from Amitha to Lina
+name: "Lina", id: "linaawad7", psw: "sha256$omN...", graduationclass: "2024", birth: "[2006, 2, 10]", age: "16"
+name: "Joselyn", id: "joselyn", psw: "sha256$DRe...", graduationclass: "2024", birth: "[2006, 9, 15]", age: "16"
+name: "Lina", id: "lina", psw: "sha256$2w2...", graduationclass: "2024", birth: "[2006, 2, 20]", age: "16"
+name: "Naja", id: "naja", psw: "sha256$7W8...", graduationclass: "2025", birth: "[2007, 3, 8]", age: "15"
 Test 3, make a dictionary
-[{"_name": "Amitha", "_uid": "amitha", "_password": "sha256$8qjuG5brXqWcy5Jf$675c536969d5f7885d69606d094bca65baf38d46cb4c68738617dda919c0bfe6"}, {"_name": "Joselyn", "_uid": "joselyn", "_password": "sha256$QkgT0zEe5EBs7h7T$eb9d59bfda33974f419f5f03cb58fd16fe70536ff107eb2064f59e2ec5eb9503"}, {"_name": "Lina", "_uid": "lina", "_password": "sha256$dKvw6f2Fa2sy9eb9$a2156dbe010e88659c88a58c65574159cdf11b2887805043175c39fde89cfeba"}, {"_name": "Naja", "_uid": "naja", "_password": "sha256$YPGINNJjpiCpXRW2$bce9b69670dd754dcc936045865229ff2173a1257f91c0e44b86b93d22dec527"}, {"_name": "Mr.Yeung", "_uid": "yeung", "_password": "sha256$2VD4MJe4ceWfvXI1$fd0f11d1ab4b637b07f159a2d31c365102663a19480b52f69de6d3ac2f5e1369"}]
+[{"_name": "Lina", "_uid": "linaawad7", "_password": "sha256$omNs5Mpp29gvzskL$1b09d570a37bf3cd5f960e4e263f4ddb829f0e123c01437c6f1406ca61327dc0", "_birth": [2006, 2, 10], "_age": 16, "_graduationclass": 2024}, {"_name": "Joselyn", "_uid": "joselyn", "_password": "sha256$DReJHaYWg6mj3Yp4$ed0b990471e155ba0082bb241286ebf050ec77c2c7fdbd549d7eff887000633d", "_birth": [2006, 9, 15], "_age": 16, "_graduationclass": 2024}, {"_name": "Lina", "_uid": "lina", "_password": "sha256$2w2pBxqzlB5Db8Cl$63fc5b25bf4a0faefebb5b893ee983d8022ee95e53b240722a40406a87fd0bcd", "_birth": [2006, 2, 20], "_age": 16, "_graduationclass": 2024}, {"_name": "Naja", "_uid": "naja", "_password": "sha256$7W8hlKk9XVNW80v1$f1dc8c8f037ccf3e705ee24554200ceb0da6c0ad63c527321cfbfc134d9ee0b1", "_birth": [2007, 3, 8], "_age": 15, "_graduationclass": 2025}]
 Test 4, make a dictionary
-[{"_name": "Amitha", "_uid": "amitha", "_password": "sha256$8qjuG5brXqWcy5Jf$675c536969d5f7885d69606d094bca65baf38d46cb4c68738617dda919c0bfe6"}, {"_name": "Joselyn", "_uid": "joselyn", "_password": "sha256$QkgT0zEe5EBs7h7T$eb9d59bfda33974f419f5f03cb58fd16fe70536ff107eb2064f59e2ec5eb9503"}, {"_name": "Lina", "_uid": "lina", "_password": "sha256$dKvw6f2Fa2sy9eb9$a2156dbe010e88659c88a58c65574159cdf11b2887805043175c39fde89cfeba"}, {"_name": "Naja", "_uid": "naja", "_password": "sha256$YPGINNJjpiCpXRW2$bce9b69670dd754dcc936045865229ff2173a1257f91c0e44b86b93d22dec527"}, {"_name": "Mr.Yeung", "_uid": "yeung", "_password": "sha256$2VD4MJe4ceWfvXI1$fd0f11d1ab4b637b07f159a2d31c365102663a19480b52f69de6d3ac2f5e1369"}]
+[{"_name": "Lina", "_uid": "linaawad7", "_password": "sha256$omNs5Mpp29gvzskL$1b09d570a37bf3cd5f960e4e263f4ddb829f0e123c01437c6f1406ca61327dc0", "_birth": [2006, 2, 10], "_age": 16, "_graduationclass": 2024}, {"_name": "Joselyn", "_uid": "joselyn", "_password": "sha256$DReJHaYWg6mj3Yp4$ed0b990471e155ba0082bb241286ebf050ec77c2c7fdbd549d7eff887000633d", "_birth": [2006, 9, 15], "_age": 16, "_graduationclass": 2024}, {"_name": "Lina", "_uid": "lina", "_password": "sha256$2w2pBxqzlB5Db8Cl$63fc5b25bf4a0faefebb5b893ee983d8022ee95e53b240722a40406a87fd0bcd", "_birth": [2006, 2, 20], "_age": 16, "_graduationclass": 2024}, {"_name": "Naja", "_uid": "naja", "_password": "sha256$7W8hlKk9XVNW80v1$f1dc8c8f037ccf3e705ee24554200ceb0da6c0ad63c527321cfbfc134d9ee0b1", "_birth": [2007, 3, 8], "_age": 15, "_graduationclass": 2025}]
 </pre>
 </div>
 </div>
