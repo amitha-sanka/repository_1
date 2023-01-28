@@ -15,7 +15,7 @@ Three of my own beneficial effects of computing include: increasing your product
 
 **2. Talk about dopamine issues above. Real? Parent conspiracy? Anything that is impacting your personal study and success in High School?**
 
-Something that is impacting my personal study and success in High School is the Advanced Placement courses I take and the activities and extracurriculars I do outside of school. I am often occupied with something which is a blessing and curse because being free with nothing to do puts me in my thoughts. However, having so much to do is bad for my mental health and contributes to my stress levels. I mainly just struggle with having so much on my plate and juggling all my responsibilties. 
+Something that is impacting my personal study and success in High School is the Advanced Placement courses I take and the activities and extracurriculars I do outside of school. I am often occupied with something which is a blessing and curse because being free with nothing to do puts me in my thoughts. However, having so much to do is bad for my mental health and contributes to my stress levels. I mainly just struggle with having so much on my plate and juggling all my responsibilties. In order to be less stressed I take time to myself each day and priotize going on a walk or going on a run to relax my body and mind. Setting time aside each day for myself has signifcantly helped and helps me get my mind off anything. It is overall really helpful to step outside into the nature and helps me rejuvenate.
 
 # 5.2 Hacks
 
@@ -27,7 +27,7 @@ Someone can empower themselves in a digital world by not relying on technology. 
 
 **2. How does someone that is empowered help someone that is not empowered? Describe something you could do at Del Norte HS.**
 
-Someone that is empowered can help someone that is not empowered by encouraging them to decrease and adjust their screen brightness on their digital devices. Additionally, telling someone the changes they have noticed in their life after reducing brightness and screen time can help persuade them to also consider reducing blue lights from screens. Something that I could do at Del Norte High School is reminding students to decrease their screen time and screen brightness. I would tell them to spend time doing things they love that do not involve using or looking at a screen. 
+Someone that is empowered can help someone that is not empowered by encouraging them to decrease and adjust their screen brightness on their digital devices. Additionally, telling someone the changes they have noticed in their life after reducing brightness and screen time can help persuade them to also consider reducing blue lights from screens. Something that I could do at Del Norte High School is reminding students to decrease their screen time and screen brightness. I would tell them to spend time doing things they love that do not involve using or looking at a screen. Additionally, I think counselors or the Del Norte High School team can give presentations or a lesson plan to teachers to present to students. I think implementing things on paper can also potentially help students because it reduces the amount of bluelight they are exposed to by spending time on their phones for social media or doing homework. 
 
 **3. Is paper or red tape blocking digital empowerment? Are there such barriers at Del Norte? Elsewhere?**
 
