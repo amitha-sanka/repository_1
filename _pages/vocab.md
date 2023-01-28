@@ -65,7 +65,7 @@ permalink: /APCSPVocabulary/
 
 ## Combining loops with conditionals to Break, Continue
 
-- <mark>Procedural Abstraction:<mark> provides a name for a process and allows a procedure to be only knowing what it doe,not how it does it
+- <mark>Procedural Abstraction:<mark> provides a name for a process and allows a procedure to be only knowing what it does not, how it does it
 - <mark>Python Def procedures:<mark> a named group of programming instructions that may have parameters and return values.
 - <mark>Parameters:<mark> input values of a procedure
 - <mark>Return Values:<mark> values that a function returns when it completes
