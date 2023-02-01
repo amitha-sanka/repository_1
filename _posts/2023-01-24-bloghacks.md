@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: This tech talk discusses the benefits and harmful effects of computing. This tech talk discusses the digital divide in computing
 categories: [markdown]
-title: 5.1 and 5.2 Hacks
+title: 5.1, 5.2, 5.3, 5.4 Hacks
 ---
 # 5.1 Hacks
 
@@ -34,3 +34,10 @@ Someone that is empowered can help someone that is not empowered by encouraging 
 Yes, I think red tape is blocking digital empowerment because the government is constantly trying to protect us from dangerous or violent things. The government protecting us is nice, however, I think it is also good for people to have access to things because the government hiding certain stuff it almost creates a feeling of danger for some. Since it seems like something is being hidden from you, and you will never figure out what it is. Yes, I think there are such barriers at Del Norte High School too because as a student you know information about a certain area. However, there is so much information students do not know because the school does not release or announce a lot of information. For example, several families donate money to the school, but paying to go on field trips still costs a lot. I also think red tape hides stuff elsewhere too. 
 
 
+# 5.3 Hacks
+
+
+**Write summary/thoughts/conclusions from each of the exercises above. Focus on avoiding Bias in algorithms or code you write.**
+
+
+After watching the YouTube video about HP, HP intentionally is racist because they only tested with dominantly white people. They should have tested with a more diverse selection of individuals, so the camera also facially recognizes those with darker skin. 
