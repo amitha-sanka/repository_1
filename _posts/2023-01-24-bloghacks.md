@@ -36,8 +36,20 @@ Yes, I think red tape is blocking digital empowerment because the government is 
 
 # 5.3 Hacks
 
-
 **Write summary/thoughts/conclusions from each of the exercises above. Focus on avoiding Bias in algorithms or code you write.**
 
+After watching the YouTube video about HP, HP intentionally is racist because they only tested with dominantly white people. They should have tested with a more diverse selection of individuals, in order for the camera to facially recognize those with darker skin. HP should have done a better job testing considering that they are a huge company they should have done a signifcantly better testing job. Due to their exclusive selection of people while testing has led them here. This is only disadvantegeous and harmful to HP because now they have a group of people who do not support their company and will not buy their HP computers. One can avoid bias in their algorithms or code they write by testing with a diverse group of people and ultimately focusing and priortizing diversity in their code. This way they can avoid bias and have a product or item that has a large audience. 
 
-After watching the YouTube video about HP, HP intentionally is racist because they only tested with dominantly white people. They should have tested with a more diverse selection of individuals, so the camera also facially recognizes those with darker skin. 
+# 5.4 Hacks 
+
+**Think of a use case for crowdsourcing in you project … CompSci has 150 ish principles students. Describe a crowdsource idea and how you might initiate it in our environment?** 
+
+A crowdsource idea and how I might initiate it in our environment is based on Night at the Museum. At Night at the Museum, we can set up a raffle system at the entrance where each parent, student, or individual receives a raffle ticket when they walk in order to ensure each person gets a raffle ticket. This way we will be able to reach a larger and diverse audience, which is perfect because this way we can reduce computer bias. 
+
+**What about Del Norte crowdsourcing? Could your project be better with crowdsourcing?**
+
+Del Norte High School crowdsourcing can be beneficial because the school has thousands of students which would help to do the crowdsourcing procedure. We can obtain the information we need from the Del Norte High School students and use that information towards our project. Yes, my project could be better with crowdsourcing because getting people's input and opinion about how they search for activiites to do and places to go to in San Diego county. Hearing their valuable inputs can help improve my project and helps me improve the user's experience on my website. 
+
+**What kind of data could you capture at N@tM to make evening interesting? Perhaps use this data to impress Teachers during finals week.**
+
+Data I can capture at Night at the Museum is how people search for activities to do and places to go to in San Diego County and also using it as a marketing technique can tremendously help. Showing people our website and guiding them around the website and the features they website has can help us gain the opinions of users. This way through user input we can improve the website and change it to better it since that is our goal and purpose to keep track of what landmarks and activities users like and keeps and organizes user’s progress in one place. 
