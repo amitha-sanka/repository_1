@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description: This tech talk discusses the benefits and harmful effects of computing. This tech talk discusses the digital divide in computing. This tech talk discusses bias in computing. This tech talk discusses crowdsourcing. 
+description: This tech talk discusses the benefits and harmful effects of computing. This tech talk discusses the digital divide in computing. This tech talk discusses bias in computing. This tech talk discusses crowdsourcing. This tech talk discusses legal and ethics in computing. This tech talk discusses safe computing. 
 categories: [markdown]
 title: 5.1, 5.2, 5.3, 5.4 Hacks
 ---
@@ -53,3 +53,36 @@ Del Norte High School crowdsourcing can be beneficial because the school has tho
 **3. What kind of data could you capture at N@tM to make evening interesting? Perhaps use this data to impress Teachers during finals week.**
 
 Data I can capture at Night at the Museum is how people search for activities to do and places to go to in San Diego County and also using it as a marketing technique can tremendously help. Showing people our website and guiding them around the website and the features they website has can help us gain the opinions of users. This way through user input we can improve the website and change it to better it since that is our goal and purpose to keep track of what landmarks and activities users like and keeps and organizes user’s progress in one place. 
+
+
+# 5.5 Hacks 
+
+**1. When you create a GitHub repository it requests a license type. Review the license types in relationship to this Tech Talk and make some notes in your personal blog.**
+
+These are all the license types that one can chose when creating a GitHub repository: Apache License 2.0, GNU General Public License v3.0, MIT License, BSD 2-Clause "Simplified" License, BSD 3-Clause "New" or "Revised" License, Boost Software License 1.0, Creative Commons Zero v1.0 Universal, Eclipse Public License 2.0, GNU Affero General Public License v3.0, GNU General Public License v2.0, GNU Lesser General Public License v2.1, Mozilla Public License 2.0, and The Unlicense. 
+
+**2. In your blog, summarize the discussions and personal analysis on Software Licenses/Options, Digital Rights, and other Legal and Ethical thoughts from this College Board topic.**
+
+The discussions and personal analysis on Software Licenses/Options, Digital Rights, and other Legal and Ethical that we discussed in class today are how having licenses prevents us from getting hacks and data breaches. Licenses like GitHub licenses encrypt keep our information safe. Also, this is why Google has two factor authentication to ensure that it is the actual person logging in and accessing their information and accounts. 
+
+**3. Make a license for your personal (blog) and Team repositories for the CPT project. Be sure to have a license for both Team GitHub repositories (frontend/backend). Document license(s) you picked and why. FYI, frontend, since it is built on GitHub pages may come with a license and restrictions. Document in blog how team made license choice and process of update.**
+
+
+# 5.6 Hacks 
+
+
+**1. Describe PII you have seen on project in CompSci Principles.**
+
+Personal Identifiable Information (PII) I have seen on a project in AP CompSci Principles is GitHub. Each student’s GitHub account appears when they search their name and their GitHub account shows their projects and repositories.
+
+**2. What are your feelings about PII and your personal exposure?**
+
+
+**3. Describe good and bad passwords? What is another step that is used to assist in authentication.**
+
+**4. Try to describe Symmetric and Asymmetric encryption.**
+
+**5. Provide an example of encryption we used in AWS deployment.**
+
+**6. Describe a phishing scheme you have learned about the hard way. Describe some other phishing techniques.**
+
