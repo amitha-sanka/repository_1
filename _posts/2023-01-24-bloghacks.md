@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: This tech talk discusses the benefits and harmful effects of computing. This tech talk discusses the digital divide in computing. This tech talk discusses bias in computing. This tech talk discusses crowdsourcing. This tech talk discusses legal and ethics in computing. This tech talk discusses safe computing. 
 categories: [markdown]
-title: 5.1, 5.2, 5.3, 5.4 Hacks
+title: 5.1, 5.2, 5.3, 5.4, 5.5, 5.6 Hacks
 ---
 # 5.1 Hacks
 
