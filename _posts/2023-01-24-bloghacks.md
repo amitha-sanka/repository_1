@@ -70,19 +70,26 @@ The discussions and personal analysis on Software Licenses/Options, Digital Righ
 
 # 5.6 Hacks 
 
-
 **1. Describe PII you have seen on project in CompSci Principles.**
 
-Personal Identifiable Information (PII) I have seen on a project in AP CompSci Principles is GitHub. Each student’s GitHub account appears when they search their name and their GitHub account shows their projects and repositories.
+Personal Identifiable Information (PII) I have seen on a project in AP CompSci Principles is GitHub. Each student’s GitHub account appears when they search their name and their GitHub account shows their projects and repositories. Since we use other programs and softwares in APCSP like Postman, AWS, or Slack, these softwares use PII measures such as encryption, secure storage, access controls, and data minimization in order to keep information safe. 
 
 **2. What are your feelings about PII and your personal exposure?**
 
+My perosonal feelings about PII are mixed. I like it in terms of it pulling up my LinkedIn when someone searches my name, however, I do not like it in terms of it pulling up personal information like my address, passwords, or phone numbers. For others, I think it is also a problem to them because of their social media. They would not want their social media accounts to appear along with their professional work since it would degrade their professional view. 
 
 **3. Describe good and bad passwords? What is another step that is used to assist in authentication.**
 
+A good password is one that is strong and secure, making it difficult for unauthorized individuals to guess or crack. Strong passwords usually are lengthier, complex, and unique. Whereas, weak passwords include one's personal information, small amount of characters, and simple. 
+
 **4. Try to describe Symmetric and Asymmetric encryption.**
+
+Symmetric encryption uses a single secret key to both encrypt and decrypt data. The same key is used for both encryption and decryption and it is used to scramble the data into an unreadable form, and the receiver uses the same key to unscramble the data and access the original message. Asymmetric encryption uses a public key to encrypt the data, while the private key is used to decrypt the data. The public key can be freely shared with anyone, but the private key must be kept secret. When someone wants to send an encrypted message to the owner of the public key, they use the public key to encrypt the data. The owner of the private key is the only one who can decrypt the data, since only they have access to the private key. 
 
 **5. Provide an example of encryption we used in AWS deployment.**
 
+One example of encryption used in AWS deployment is the encryption of data stored in Amazon S3, which is a scalable and durable object storage service. In Amazon S3, one can enable server-side encryption for objects by specifying an encryption algorithm and is done using Amazon S3-Managed Encryption Keys (SSE-S3) or AWS Key Management Service (SSE-KMS) encryption. With SSE-KMS, specifying a customer master key stored in AWS Key Management Service to encrypt the data, there is more security and encryption. 
+
 **6. Describe a phishing scheme you have learned about the hard way. Describe some other phishing techniques.**
 
+A phishing scheme I have learned about the hard way are fake login pages that looks like the login page of a website. The user puts in their information thinking it is the actual website asking for login credentials. However, a hacker behind the scenes is taking record of the credentials and is using it in the wrong ways. Some phishing techniques include gathering information about the one through social media and public records and using this information to their advantage. Another phishing technique includes creating a fake email or message that appears to be from someone they know. While the person on the other side is prompted to take action or provide personal information.
