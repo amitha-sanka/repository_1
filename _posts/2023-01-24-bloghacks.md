@@ -67,6 +67,12 @@ The discussions and personal analysis on Software Licenses/Options, Digital Righ
 
 **3. Make a license for your personal (blog) and Team repositories for the CPT project. Be sure to have a license for both Team GitHub repositories (frontend/backend). Document license(s) you picked and why. FYI, frontend, since it is built on GitHub pages may come with a license and restrictions. Document in blog how team made license choice and process of update.**
 
+Personal Blog License: https://github.com/amitha-sanka/repository_1/compare/master...add-license-1?expand=1
+
+Group Blog License: https://github.com/amitha-sanka/janl/commit/9cf3ba174669a8a496c3d7af1253dd4b8b85399f
+
+For both my personal and group blog, I chose to use a MIT license because anyone could use it and could be credited. 
+My group's blog and my personal blog, are both blogs I do not plan to profit off of, which is why I specfically chose to use an MIT  blog since in this case it makes the most sense to do so. 
 
 # 5.6 Hacks 
 
