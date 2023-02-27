@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description: Team ANJL San Diego County Travel Website
+description: Self Reflection, Group Reflection, CTE, and more! 
 categories: [markdown]
 title: Trimester 2 Night @ the Museum Reflection
 ---
