@@ -60,6 +60,56 @@
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+
+<span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s1">&#39;dog.jpg&#39;</span><span class="p">)</span>
+<span class="n">imgGray</span> <span class="o">=</span> <span class="n">img</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s1">&#39;L&#39;</span><span class="p">)</span>
+<span class="n">imgGray</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">FileNotFoundError</span>                         Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/amitha/vscode/repository_1/_notebooks/2023-03-07-t3week1hacks.ipynb Cell 2</span> in <span class="ansi-cyan-fg">&lt;cell line: 3&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/amitha/vscode/repository_1/_notebooks/2023-03-07-t3week1hacks.ipynb#W1sZmlsZQ%3D%3D?line=0&#39;&gt;1&lt;/a&gt;</span> from PIL import Image
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:/Users/amitha/vscode/repository_1/_notebooks/2023-03-07-t3week1hacks.ipynb#W1sZmlsZQ%3D%3D?line=2&#39;&gt;3&lt;/a&gt;</span> img = Image.open(&#39;dog.jpg&#39;)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/amitha/vscode/repository_1/_notebooks/2023-03-07-t3week1hacks.ipynb#W1sZmlsZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt;</span> imgGray = img.convert(&#39;L&#39;)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:/Users/amitha/vscode/repository_1/_notebooks/2023-03-07-t3week1hacks.ipynb#W1sZmlsZQ%3D%3D?line=4&#39;&gt;5&lt;/a&gt;</span> imgGray.show()
+
+File <span class="ansi-green-fg">~/opt/anaconda3/lib/python3.9/site-packages/PIL/Image.py:2953</span>, in <span class="ansi-cyan-fg">open</span><span class="ansi-blue-fg">(fp, mode, formats)</span>
+<span class="ansi-green-intense-fg ansi-bold">   2950</span>     filename = fp
+<span class="ansi-green-intense-fg ansi-bold">   2952</span> if filename:
+<span class="ansi-green-fg">-&gt; 2953</span>     fp = builtins.open(filename, &#34;rb&#34;)
+<span class="ansi-green-intense-fg ansi-bold">   2954</span>     exclusive_fp = True
+<span class="ansi-green-intense-fg ansi-bold">   2956</span> try:
+
+<span class="ansi-red-fg">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;dog.jpg&#39;</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
