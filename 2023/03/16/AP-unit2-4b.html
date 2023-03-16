@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      8 min read
     
 </span></p>
 
@@ -165,16 +165,20 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses PRAGMA statement to read schema.</p>
 </blockquote>
-<p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?
-It is like a category.</p>
+<p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?</p>
+<p>It is like a category.</p>
 <ul>
-<li>What is the purpose of identity Column in SQL database?
-The purpose of identity Column in SQL database is to organize the information and data. </li>
-<li>What is the purpose of a primary key in SQL database?
-Primary piece should be unique, such as an ID number. </li>
-<li>What are the Data Types in SQL table?
-Integer, string, lists, and boolean. </li>
+<li>What is the purpose of identity Column in SQL database?</li>
 </ul>
+<p>The purpose of identity Column in SQL database is to organize the information and data.</p>
+<ul>
+<li>What is the purpose of a primary key in SQL database?</li>
+</ul>
+<p>Primary piece should be unique, such as an ID number.</p>
+<ul>
+<li>What are the Data Types in SQL table?</li>
+</ul>
+<p>Integer, string, lists, and boolean.</p>
 
 </div>
 </div>
@@ -247,10 +251,20 @@ Integer, string, lists, and boolean. </li>
 </blockquote>
 <ul>
 <li>What is a connection object?  After you google it, what do you think it does?</li>
+</ul>
+<p>A connection object is an object that connects two objects together. Ater Googleing it, connection object is an instance of a connection class that represents a connection between a program and a database. It contains information about the database, such as the server address, database name, authentication details, and other parameters needed to establish a connection.</p>
+<ul>
 <li>Same for cursor object?</li>
+</ul>
+<p>A cursor object is an instance of a cursor class that allows a program to interact with the database by executing SQL commands and retrieving results. It maintains the current position in the result set and provides methods to navigate and modify the data.</p>
+<ul>
 <li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
+</ul>
+<p>The cursor object may have attributes such as the SQL statement being executed, the result set, the number of rows affected, and the position in the result set. Conn objects include the database driver, connection parameters, status, and transaction state.</p>
+<ul>
 <li>Is "results" an object?  How do you know?</li>
 </ul>
+<p>"Results" is a variable that holds data returned from a database query, it could be an object if the data is returned, which is known in the form of a collection or a custom class instance.</p>
 
 </div>
 </div>
@@ -325,12 +339,14 @@ Integer, string, lists, and boolean. </li>
 <blockquote>
 <p>Uses SQL INSERT to add row</p>
 <ul>
-<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?
-Object oriented programming is different and is organized. It is bigger too. However imperative might be better when doing a small action. </li>
-<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?
-The purpse of SQL INSERT is to add new rows of data inot a database. No, it is not the same as User <strong>init</strong> because it initializes the class's attributes. </li>
+<li>Compore create() in both SQL lessons.  What is better or worse in the two implementations?</li>
 </ul>
 </blockquote>
+<p>Object oriented programming is different and is organized. It is bigger too. However imperative might be better when doing a small action.</p>
+<ul>
+<li>Explain purpose of SQL INSERT.   Is this the same as User <strong>init</strong>?</li>
+</ul>
+<p>The purpse of SQL INSERT is to add new rows of data inot a database. No, it is not the same as User <strong>init</strong> because it initializes the class's attributes.</p>
 
 </div>
 </div>
@@ -393,9 +409,13 @@ The purpse of SQL INSERT is to add new rows of data inot a database. No, it is n
 <ul>
 <li>What does the hacked part do?</li>
 <li>Explain try/except, when would except occur?</li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
 </ul>
 </blockquote>
+<p>A try/except block is used in Python to catch and handle errors or exceptions that occur during the execution of a program. The code inside the try block is executed normally, and if an exception is raised, the code inside the corresponding except block is executed to handle the exception. It happens due to syntax errors, a type error, or a runtime errors.</p>
+<p>The except block will occur when an exception is raised during the execution of the try block.</p>
+<ul>
+<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
+</ul>
 
 </div>
 </div>
@@ -578,6 +598,29 @@ The purpse of SQL INSERT is to add new rows of data inot a database. No, it is n
 (6, 'Marion Ravenwood', 'raven', 'sha256$u794643cNpo83Vzz$7b9cc1d50bb213d262c26151a205d58fb192fe5b9e7e93df260dba2a114e0941', '1921-10-21')
 (7, 'Haeryn Yu', 'haeryn yu', 'sha256$56X6ruXP7531D1jX$8651e405fd058806f62f857e90a9016810894965ffe42800482a5999e91c3781', '2006-04-29')
 (8, 'Amitha Sanka', 'amitha', 'sha256$mPuBvNMcbUGo7MNd$c7357d592e8c53c39667913f743896c2cd152f18a35649594c097ef63c729260', '2005-10-31')
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>Traceback (most recent call last):
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1134, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 311, in _pydevd_bundle.pydevd_cython.PyDBFrame.do_wait_suspend
+  File "/Users/amitha/.local/lib/python3.9/site-packages/debugpy/_vendored/pydevd/pydevd.py", line 2062, in do_wait_suspend
+    keep_suspended = self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread, frames_tracker)
+  File "/Users/amitha/.local/lib/python3.9/site-packages/debugpy/_vendored/pydevd/pydevd.py", line 2098, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Perform Jupyter 'Run All' prior to starting menu
 </pre>
 </div>
 </div>
