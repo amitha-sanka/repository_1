@@ -32,3 +32,7 @@ title: Big Idea 2 MC Corrections
 **Correct answer:** Filter by photographer, then filter by year, then sort by year AND Sort by year, then filter by year, then filter by photographer
 
 **Notes:** The correct sequence of steps should be organizing everything from least to greatest. The sequence I chose would not remove entries without an year, so the information and data in the spreadsheet would be inaccurate. 
+
+# Reflection 
+
+I feel confident about the topics in Big Idea 2 and understand the concepts well. This can be seen through the score I got on the Big Idea 2 quiz. I received a 92% on the quiz and overall feel confident about Big Idea 2 by learning about it in class the past two weeks. 
