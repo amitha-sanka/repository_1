@@ -25,7 +25,7 @@ title: Big Idea 2 MC Corrections
 
 21. 
 
-[q21](https://cdn.discordapp.com/attachments/1010052426490982461/1086373145096765480/Screen_Shot_2023-03-17_at_12.30.34_PM.jpg)
+![q21](https://cdn.discordapp.com/attachments/1010052426490982461/1086373145096765480/Screen_Shot_2023-03-17_at_12.30.34_PM.jpg)
 
 **My answer:** Filter by photographer, then filter by year, then sort by year AND Sort by subject, then sort by year, then filter by photographer
 
