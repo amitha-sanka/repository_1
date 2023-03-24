@@ -5,6 +5,11 @@ description: Collegeboard Project
 categories: [markdown]
 title: My Plans to Finish CPT
 ---
+# Details
+
+- My role: Frontend 
+- My feature: Your Likes Page
+    - Goal: To keep track of what landmarks and activities users like and keeps and organizes user’s progress in one place 
 
 # How my feature fits the Collegeboard Criteria? 
 
