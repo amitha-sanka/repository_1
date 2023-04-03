@@ -195,11 +195,9 @@ O(1)</mark>. </li>
 
 <span class="c1"># What do you notice in the output?</span>
 <span class="c1"># Only numbers 1, 2, 3 were printed and it got rid of all the dupilicate values. </span>
-<span class="c1">#</span>
 
 <span class="c1"># Why do you think Sets are in the same tech talk as Hashmaps/Hashtables?</span>
 <span class="c1"># I think Sets are in the same tech talk as Hashmaps/Hashtables because a set of numbers are released and there are no duplicates. </span>
-<span class="c1">#</span>
 </pre></div>
 
     </div>
@@ -270,7 +268,7 @@ O(1)</mark>. </li>
 
 <span class="c1"># What data structures do you see?</span>
 <span class="c1"># .get, indexing </span>
-<span class="c1">#</span>
+<span class="c1"># I also see a list for genre and dictionary for tracks</span>
 
 <span class="c1"># Printing the dictionary</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">lover_album</span><span class="p">)</span>
@@ -450,10 +448,13 @@ The Man
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">lover_album</span><span class="o">.</span><span class="n">items</span><span class="p">():</span> <span class="c1"># iterate using a for loop for key and value</span>
     <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
-
+<span class="nb">print</span><span class="p">(</span><span class="s2">""</span><span class="p">)</span>
 <span class="c1"># Write your own code to print tracks in readable format</span>
-<span class="c1">#</span>
-<span class="c1">#</span>
+<span class="c1"># My own code: </span>
+<span class="n">tracks</span> <span class="o">=</span> <span class="n">lover_album</span><span class="p">[</span><span class="s2">"tracks"</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"ID"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">tracks</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">v</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -469,10 +470,10 @@ The Man
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/Users/amitha/vscode/repository_1/_notebooks/2023-03-29-DS-hashmaps.ipynb Cell 11</span> in <span class="ansi-cyan-fg">&lt;cell line: 2&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/amitha/vscode/repository_1/_notebooks/2023-03-29-DS-hashmaps.ipynb#X13sZmlsZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> # Print lover_album in more readable format
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/amitha/vscode/repository_1/_notebooks/2023-03-29-DS-hashmaps.ipynb#X13sZmlsZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> for k,v in lover_album.items(): # iterate using a for loop for key and value
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/amitha/vscode/repository_1/_notebooks/2023-03-29-DS-hashmaps.ipynb#X13sZmlsZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span>     print(str(k) + ": " + str(v))
+<span class="ansi-green-intense-fg ansi-bold">/Users/amitha/vscode/repository_1/_notebooks/2023-03-29-DS-hashmaps.ipynb Cell 11</span> in <span class="ansi-cyan-fg">&lt;cell line: 1&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/amitha/vscode/repository_1/_notebooks/2023-03-29-DS-hashmaps.ipynb#X13sZmlsZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> for k,v in lover_album.items(): # iterate using a for loop for key and value
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/amitha/vscode/repository_1/_notebooks/2023-03-29-DS-hashmaps.ipynb#X13sZmlsZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span>     print(str(k) + ": " + str(v))
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/amitha/vscode/repository_1/_notebooks/2023-03-29-DS-hashmaps.ipynb#X13sZmlsZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span> print("")
 
 <span class="ansi-red-fg">NameError</span>: name 'lover_album' is not defined</pre>
 </div>
