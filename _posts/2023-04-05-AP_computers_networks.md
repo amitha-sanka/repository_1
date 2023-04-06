@@ -88,7 +88,9 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 
 - Complete the network activity, summarize your understanding of fault tolerance.
 
+#### My Attempt 
 
+![myfaulttolerance](https://cdn.discordapp.com/attachments/1010052426490982461/1093317152196538468/IMG_1555.jpg)
 ### Parallel and Distributed Computing
 > Review previous lecture on Parallel Computing and watch Daily vidoe 4.3.  Think of ways to make something in you team project to utilize Cores more effectively.  Here are some thoughts to add to your story of Computers and Networks...
 
