@@ -40,6 +40,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 ![output devices](https://cdn.discordapp.com/attachments/1010052426490982461/1093277908983873616/output-devices-icon-set-vector-260nw-1285103905.webp)
 
 
+
 ### The Internet
 > Watch/review College Board Daily Video for 4.1.1
 
