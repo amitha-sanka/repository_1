@@ -38,7 +38,6 @@ I received 63/66; 95%
 
 **Notes:** This block of code moves the robot an extra square forward and does not rotate the correct number of times. Therefore, with this block the robot will not move to the gray square with incorrect segments. 
 
-
 ## Question 41
 
 ![41](https://cdn.discordapp.com/attachments/1010052426490982461/1093985496365006920/IMG_1682.jpg)
@@ -52,3 +51,7 @@ I received 63/66; 95%
 ![41c](https://cdn.discordapp.com/attachments/1010052426490982461/1093982989811204197/d1775d65-a2f2-44ba-a06d-b8820ac72fa7.jpg)
 
 **Notes:** The addition of the +finalExam is neccesary because it needs to be assignted to the adjustedTotal. There needs to be another function that gets assigned to adjustedTotal. 
+
+# Reflection 
+
+I think I performed really well on this multiple choice quiz. I feel very hapy with my result. I felt that this multiple choice test was fairly easy for me. This time I made sure to go back and check all my answers, which I believe made a really big difference in my result for the College Board multiple choice test. 
