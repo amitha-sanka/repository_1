@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      8 min read
     
 </span></p>
 
@@ -101,6 +101,27 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h3"><a href="#parallel-and-distributed-computing">Parallel and Distributed Computing</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#completed-hacks">Completed Hacks</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#41-daily-video-1">4.1 Daily Video 1</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#notes">Notes</a></li>
+<li class="toc-entry toc-h4"><a href="#vocabulary-matching-activity">Vocabulary Matching Activity</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#41-daily-video-2">4.1 Daily Video 2</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#notes-1">Notes</a></li>
+<li class="toc-entry toc-h4"><a href="#true-or-false-questions">True or False Questions</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#42-daily-video-1">4.2 Daily Video 1</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#notes-2">Notes</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul><h2 id="requirements">
@@ -221,12 +242,14 @@ window.onload = wrap_img;
 </blockquote>
 
 <ul>
-  <li>
-    <p>What is naturally Distributed in Frontend/Backend archeticture?</p>
-  </li>
-  <li>
-    <p>Analyze this command in Docker: <code class="language-plaintext highlighter-rouge">ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"</code>.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an <a href="https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7">article</a></p>
-  </li>
+  <li>What is naturally Distributed in Frontend/Backend archeticture?</li>
+</ul>
+
+<p>The distribution of responsibilities is naturally divided between the frontend and backend. The frontend consists of the user interface, which includes the visual elements of the application that the user interacts with. The backend consists of the server-side components of the application, like the database, APIs, and business logic and manages and processes data. This distribution allows for the frontend and backend simplify development and improve maintainability. It  allows for flexibility in technologies used for each piece, as the frontend and backend can be developed independently and communicate through well-defined interfaces.</p>
+
+<ul>
+  <li>Analyze this command in Docker: <code class="language-plaintext highlighter-rouge">ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"</code>.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an <a href="https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7">article</a>
+</li>
 </ul>
 
 <blockquote>
@@ -272,6 +295,76 @@ window.onload = wrap_img;
 </span><span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 
 </code></pre></div></div>
+<h2 id="completed-hacks">
+<a class="anchor" href="#completed-hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Completed Hacks</h2>
+
+<h3 id="41-daily-video-1">
+<a class="anchor" href="#41-daily-video-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.1 Daily Video 1</h3>
+<h4 id="notes">
+<a class="anchor" href="#notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes</h4>
+<ul>
+  <li>computers are capable of sending and receiving data</li>
+  <li>packet: small amount of data sent over a network. each packet also includes the source and the destination information</li>
+  <li>computer system isa group of computing devices and programs working together for a joint purpose</li>
+  <li>computer network is a group of interconnected computing devices capable of sending or receiving data</li>
+  <li>packet switching: message (file) is backed into packets and sent in any order, packets are reassembled by the recipient’s device</li>
+  <li>routing process of finding a path from sender to receiver</li>
+  <li>bandwidth: max amount of data that can be sent in a fixed amount of time on a computer network</li>
+  <li>measured by bits per second</li>
+  <li>path: sequence of directly connected computing devices that begins at the sender and ends at the receiver</li>
+  <li>route: process of finding a path from sender to receiver</li>
+  <li>computer network is a type of computing system
+    <h4 id="vocabulary-matching-activity">
+<a class="anchor" href="#vocabulary-matching-activity" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vocabulary Matching Activity</h4>
+    <ol>
+      <li>Path = A</li>
+      <li>Route = E</li>
+      <li>Computer System = B</li>
+      <li>Computer Device = C</li>
+      <li>Bandwidth = D</li>
+      <li>Computer Network = F</li>
+    </ol>
+  </li>
+</ul>
+
+<h3 id="41-daily-video-2">
+<a class="anchor" href="#41-daily-video-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.1 Daily Video 2</h3>
+<h4 id="notes-1">
+<a class="anchor" href="#notes-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes</h4>
+<ul>
+  <li>protocol: agreed-upon set of rules that specify the behavior of a system</li>
+  <li>OSI: open systems interconnect, the layers you have to go through communicate seven groups of protocols</li>
+  <li>network access: data link, fiber, MAC, ethernet, NIC, wire</li>
+  <li>routers are special purpose computer with a MAC address</li>
+  <li>packets contain data that is being transmitted as well as metadata containing information used for routing information</li>
+  <li>internet was designer to be scalable able to change in size and scale to meet new demands</li>
+  <li>internet engineering task force (IEFT):
+    <h4 id="true-or-false-questions">
+<a class="anchor" href="#true-or-false-questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>True or False Questions</h4>
+  </li>
+</ul>
+
+<p><mark>T</mark> Open standards and protocols enable different manufacturers and develops to build hardware and software that can communicate with hardwire and software on the rest of the internet</p>
+
+<p><mark>F</mark> IETF is a task force used to enforce laws to keep manufacturers out of the internet</p>
+
+<p><mark>F</mark> Routes are determined in advanced and are not flexible</p>
+
+<p><mark>T</mark> A protocol is an agreed-upon set of rules that specify the behavior of a system.</p>
+
+<p><mark>F</mark> UDP guarantees transfers and is faster.</p>
+
+<p><mark>F</mark> The World Wide Web is the internet.</p>
+
+<p><mark>T</mark> HTTP is a protocol used by the World Wide Web.</p>
+
+<h3 id="42-daily-video-1">
+<a class="anchor" href="#42-daily-video-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>4.2 Daily Video 1</h3>
+<h4 id="notes-2">
+<a class="anchor" href="#notes-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes</h4>
+<ul>
+  <li>My understanding of fault tolerance is that the internet has been engineered to be fault tolerant with abstractions for routing and transmitting data. Redundancy is inclusions of extra components that can used to mitigate failure of a system if other components fail. A way to accomplish network redundancy is by having one path between any 2 connected devices. Redundancy helps keep our interest reliable and accessible to thousands of people in the world. More connections can make the network better, but having one connection minimum is necessary.</li>
+</ul>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
