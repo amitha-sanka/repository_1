@@ -9,6 +9,9 @@ title: CPT Blog Write-up
 
 - Describe Procedural Abstraction, discussion on code and abstraction techniques used: Frontend/Backend, Functions, Classes, etc
 
+The identified procedure, getNutritionInfo gathers the nutrition facts from the API. The function gets passed in the query and results in data of the searched food. This contributes to the overall functionality of the program because the calorie data is being gathered to help the user receive the requested calorie information. In terms of classes, I made a food class, Food and decoder class, and FoodDecoder in order to decode the JSON. In my Backend, I made a result route for destinations. In my Backend, I made a result route for destinations. In my Frontend,
+
+
 - Describe Data Abstraction, discussion on data used and data structures to support project: JSON, Dictionaries, Lists, and/or Database Tables.
 
 - Describe Usage of Control Structures, ie Iteration and Conditional Statements. Areas where you use lists and interation in Frontend Display. Areas were you decide and execulte different paths of code, for instance Create vs Read vs Update vs Delete. Also, show a function where a different parameter or condition causes a differen result.
