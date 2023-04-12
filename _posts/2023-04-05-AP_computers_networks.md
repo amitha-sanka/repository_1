@@ -190,3 +190,7 @@ print(result)
 ### 4.2 Daily Video 1
 #### Notes
 - My understanding of fault tolerance is that the internet has been engineered to be fault tolerant with abstractions for routing and transmitting data. Redundancy is inclusions of extra components that can used to mitigate failure of a system if other components fail. A way to accomplish network redundancy is by having one path between any 2 connected devices. Redundancy helps keep our interest reliable and accessible to thousands of people in the world. More connections can make the network better, but having one connection minimum is necessary. 
+
+### Internet and Its Many Levels Diagram 
+
+![diagram](https://cdn.discordapp.com/attachments/1010052426490982461/1095619808260804608/Screen_Shot_2023-04-12_at_12.55.44_AM.png)
