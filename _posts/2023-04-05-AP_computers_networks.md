@@ -193,4 +193,6 @@ print(result)
 
 ### Internet and Its Many Levels Diagram 
 
-![diagram](https://cdn.discordapp.com/attachments/1010052426490982461/1095619808260804608/Screen_Shot_2023-04-12_at_12.55.44_AM.png)
+![diagram 1](https://cdn.discordapp.com/attachments/1010052426490982461/1095619808260804608/Screen_Shot_2023-04-12_at_12.55.44_AM.png)
+
+![diagram 2](https://cdn.discordapp.com/attachments/1010052426490982461/1097985373944156372/Screen_Shot_2023-04-18_at_1.39.43_PM.jpg)
