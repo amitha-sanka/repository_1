@@ -99,12 +99,14 @@ The program displays the sum of the even integers from 2 to 20.
 
 ## Question 34
 
-![34]()
+![34](https://cdn.discordapp.com/attachments/1010052426490982461/1098325588877520926/Screen_Shot_2023-04-19_at_10.52.10_AM.jpg)
 
 **My answer:**  
 
+![34m](https://cdn.discordapp.com/attachments/1010052426490982461/1098325589317910638/Screen_Shot_2023-04-19_at_10.52.40_AM.jpg)
 
 **Correct answer:**  
 
+![34c](https://cdn.discordapp.com/attachments/1010052426490982461/1098325589116604496/Screen_Shot_2023-04-19_at_10.52.48_AM.jpg)
 
-**Notes:** 
+**Notes:** The robot needs to move up 3 spaces forward in order to reach its final destination, which is what the BotMover 3 indicates. While the answer I chose has BotMover 2. 
