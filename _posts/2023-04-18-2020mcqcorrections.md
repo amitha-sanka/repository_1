@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: Corrections
 categories: [markdown]
-title:  2020 MCQ 
+title: 2020 MCQ 
 ---
 
 # My Score
@@ -110,3 +110,7 @@ The program displays the sum of the even integers from 2 to 20.
 ![34c](https://cdn.discordapp.com/attachments/1010052426490982461/1098325589116604496/Screen_Shot_2023-04-19_at_10.52.48_AM.jpg)
 
 **Notes:** The robot needs to move up 3 spaces forward in order to reach its final destination, which is what the BotMover 3 indicates. While the answer I chose has BotMover 2. 
+
+# Reflection 
+
+I felt that this multiple choice test was a little difficult for me especially the questions that had images and diagrams that I had to understand to answer the question. Those were the most difficult and I can definetly use more practice on those types of questions. Otherwise, all the other questions in this test were fairly easy. 
