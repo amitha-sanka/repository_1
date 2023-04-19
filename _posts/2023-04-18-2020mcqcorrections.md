@@ -8,7 +8,7 @@ title:  2020 MCQ
 
 # My Score
 
-I received 60/67; 89% 
+I received 60/67; 89.5% 
 
 # Test Corrections
 
@@ -95,7 +95,7 @@ The program displays the sum of the odd integers from 1 to 19.
 
 The program displays the sum of the even integers from 2 to 20.
 
-**Notes:** 
+**Notes:** Due to the +2 and value being added to this, it is referring to the numbers being even. Therefore, even numbers from 2 to 20 are being displayed with the code. 
 
 ## Question 34
 

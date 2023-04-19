@@ -1,6 +1,6 @@
-name: 'fastpages: An easy to use blogging platform with support for Jupyter Notebooks.'
-description: Converts Jupyter notebooks and Word docs into Jekyll blog posts.
-author: Hamel Husain
+name: 'fastpages: 'Amitha Sanka'
+description: 
+author: 
 inputs:
   BOOL_SAVE_MARKDOWN:
     description: Either 'true' or 'false'.  Whether or not to commit converted markdown files from notebooks and word documents into the _posts directory in your repo.  This is useful for debugging.
