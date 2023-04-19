@@ -37,7 +37,7 @@ The program can only use a fixed number of bits to represent integers; the compu
 
 **Notes:** 
 
-- 
+
 ## Question 15
 
 
@@ -48,7 +48,7 @@ The program can only use a fixed number of bits to represent integers; the compu
 
 
 **Notes:** 
--
+
 ## Question 18 
 
 
@@ -59,7 +59,7 @@ The program can only use a fixed number of bits to represent integers; the compu
 
 
 **Notes:** 
--
+
 ## Question 21
 
 
@@ -70,7 +70,7 @@ The program can only use a fixed number of bits to represent integers; the compu
 
 
 **Notes:** 
--
+
 ## Question 24
 
 
@@ -81,7 +81,7 @@ The program can only use a fixed number of bits to represent integers; the compu
 
 
 **Notes:** 
--
+
 ## Question 34
 
 
@@ -92,4 +92,3 @@ The program can only use a fixed number of bits to represent integers; the compu
 
 
 **Notes:** 
--
