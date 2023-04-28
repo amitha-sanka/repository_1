@@ -3,15 +3,15 @@ $med-emph: #f4488a; // description of post
 $low-emph: #f5879b; // dates on posts
 $dark-grey : #fcd1de; // background
 $overlay : #efe7de; // table background
-$overlay-light: mix($dark-grey, white, 86%);
+$overlay-light: mix($dark-blue, white, 86%);
 
 html, body, input, textarea, select, button {   
   color: $high-emph !important;
-  background-color: $dark-grey !important;
+  background-color: $dark-blue !important;
 }
 
 a {
-    color: rgb(0, 0, 0) !important;
+    color: rgb(255, 255, 255) !important;
 }
 
 a:hover {
