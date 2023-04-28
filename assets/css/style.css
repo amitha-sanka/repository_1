@@ -484,7 +484,7 @@ p code { font-size: 22x; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-html, body, input, textarea, select, button { color: #e40587 !important; background-color: #fff491 !important; }
+html, body, input, textarea, select, button { color: #e40587 !important; background-color: #ddfa9e !important; }
 
 a { color: black !important; }
 
@@ -492,11 +492,11 @@ a:hover { color: #e40587 !important; }
 
 .site-title, .site-title:visited, .site-nav, .page-link { color: #e40587 !important; }
 
-.site-nav { background-color: #fff491; border-color: #fff6a0; }
+.site-nav { background-color: #ddfa9e; border-color: #e2fbac; }
 
-* { scrollbar-color: #fff491 #fff6a0; }
+* { scrollbar-color: #ddfa9e #e2fbac; }
 
-pre, code { border-color: #fff6a0; background-color: #efe7de; }
+pre, code { border-color: #e2fbac; background-color: #efe7de; }
 
 .page-description { color: #f4488a; }
 
@@ -504,15 +504,15 @@ pre, code { border-color: #fff6a0; background-color: #efe7de; }
 
 .post-content p, .post-content li { color: #f4488a; }
 
-.btn { background-color: #efe7de !important; color: #e40587 !important; border-color: #fff6a0 !important; }
+.btn { background-color: #efe7de !important; color: #e40587 !important; border-color: #e2fbac !important; }
 
-.btn:hover { background-color: #fff491 !important; }
+.btn:hover { background-color: #ddfa9e !important; }
 
-table th { background-color: #efe7de; border-color: #fff6a0; color: #e40587; }
+table th { background-color: #efe7de; border-color: #e2fbac; color: #e40587; }
 
-table td { background-color: #fff491; border-color: #fff6a0; color: #f4488a; }
+table td { background-color: #ddfa9e; border-color: #e2fbac; color: #f4488a; }
 
-.flash { color: #fff491 !important; filter: brightness(80%); }
+.flash { color: #ddfa9e !important; filter: brightness(80%); }
 
 canvas { filter: invert(100%); }
 
