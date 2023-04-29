@@ -79,11 +79,11 @@ window.onload = wrap_img;
     <html>
 <form>
       <label for="1binary">FIRST Binary Number:</label>
-      <input type="text" id="1binary" name="1binary" /><br /><br />
+      <input type="text" id="1binary" name="1binary"><br><br>
       <label for="2binary">SECOND Binary Number:</label>
-      <input type="text" id="2binary" name="2binary" /><br /><br />
-      <input type="button" value="Multiply" onclick="binaryMultiply()" />
-      <input type="button" value="Divide" onclick="binaryDivide()" />
+      <input type="text" id="2binary" name="2binary"><br><br>
+      <input type="button" value="Multiply" onclick="binaryMultiply()">
+      <input type="button" value="Divide" onclick="binaryDivide()">
       <p id="Bresult"></p>
       <p id="Dresult"></p>
 </form>
@@ -113,14 +113,13 @@ window.onload = wrap_img;
     document.getElementId("Bresult").innerHTML = "Quotient of binary numbers: " + binaryQuotient;
     document.getElementId("Dresult").innerHTML = "Quotient in base 10: " + decimalQuotient;
   } else {
-    document.getElementId("Bresult").innerHTML = "The binary division is not exact.";
-    document.getElementId("Dresult").innerHTML = "The quotient is a decimal number.";
+    document.getElementId("Bresult").innerHTML = "Binary division is incorrect.";
+    document.getElementId("Dresult").innerHTML = "Quotient is a decimal.";
   }
 }
 
     </script>
 </html>
-
   </div>
 
 </article>
