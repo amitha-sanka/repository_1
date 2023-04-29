@@ -19,30 +19,30 @@ permalink: /BinaryButtons/
 <script>
   
   function binaryMultiply() {
-  var 1binary = document.getElementById("1binary").value;
-  var 2binary = document.getElementById("2binary").value;
+  var binary_1 = document.getElementId("1binary").value;
+  var binary_2 = document.getElementId("2binary").value;
   
-  var decimalProduct = parseInt(1binary, 2) * parseInt(2binary, 2);
+  var dProduct = parseInteger(binary_1, 2) * parseInteger(binary_2, 2);
   
-  var binaryProduct = decimalProduct.toString(2);
+  var bProduct = dProduct.toString(2);
   
-  document.getElementById("Bresult").innerHTML = "Product of binary numbers: " + binaryProduct;
-  document.getElementById("Dresult").innerHTML = "Product in base 10: " + decimalProduct;
+  document.getElementId("Bresult").innerHTML = "Product of binary numbers: " + bProduct;
+  document.getElementId("Dresult").innerHTML = "Product in base 10: " + dProduct;
 }
 
   function binaryDivide() {
-  var 1binary = document.getElementById("1binary").value;
-  var 2binary = document.getElementById("2binary").value;
+  var binary_1 = document.getElementId("1binary").value;
+  var binary_2 = document.getElementId("2binary").value;
 
-  var decimalQuotient = parseInt(1binary, 2) / parseInt(2binary, 2);
+  var decimalQuotient = parseInteger(binary_1, 2) / parseInteger(binary_2, 2);
 
   if (decimalQuotient % 1 === 0) {
     var binaryQuotient = decimalQuotient.toString(2);
-    document.getElementById("Bresult").innerHTML = "Quotient of binary numbers: " + binaryQuotient;
-    document.getElementById("Dresult").innerHTML = "Quotient in base 10: " + decimalQuotient;
+    document.getElementId("Bresult").innerHTML = "Quotient of binary numbers: " + binaryQuotient;
+    document.getElementId("Dresult").innerHTML = "Quotient in base 10: " + decimalQuotient;
   } else {
-    document.getElementById("Bresult").innerHTML = "The binary division is not exact.";
-    document.getElementById("Dresult").innerHTML = "The quotient is a decimal number.";
+    document.getElementId("Bresult").innerHTML = "The binary division is not exact.";
+    document.getElementId("Dresult").innerHTML = "The quotient is a decimal number.";
   }
 }
 
