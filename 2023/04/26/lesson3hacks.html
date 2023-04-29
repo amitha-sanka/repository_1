@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      5 min read
     
 </span></p>
 
@@ -195,9 +195,58 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;random_numbers_1000.csv&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">files</span><span class="p">:</span>
+    <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">files</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">:</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">row</span><span class="p">])</span>
+
+<span class="n">meanCalc</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="n">oddNumbers</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">oddNumbers</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+       <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">*=</span> <span class="mi">2</span>
+
+<span class="n">updateMean</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">data</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mean of CSV File Data: &quot;</span><span class="p">,</span> <span class="n">meanCalc</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Mean of New Data: &quot;</span><span class="p">,</span> <span class="n">updateMean</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Amount of Odds: &quot;</span><span class="p">,</span> <span class="n">oddNumbers</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Logic-Gates-Hacks">Logic Gates Hacks<a class="anchor-link" href="#Logic-Gates-Hacks"> </a></h2><p>1.How can logic gates be used to execute basic computer functions?(1-2 sentences)</p>
+
+<pre><code>Mean of CSV File Data: 63.6
+Mean of New Data: 69
+Amount of Odds: 358</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Logic-Gates">Logic Gates<a class="anchor-link" href="#Logic-Gates"> </a></h2><p>1.How can logic gates be used to execute basic computer functions?(1-2 sentences)</p>
 <p>Logic gates can be used to execute basic computer functions by being combined to perform basic computer functions. They can often perform functions like arithmetic operations, data storage, and decision making.</p>
 <p>2.What is the difference between boolean operations and logic gates?(1-2 sentences)</p>
 <p>The difference between boolean expressions and logic gates is that boolean operations are mathematical functions used on boolean values. Whereas, logic gates are the realization of Boolean operations. Logic gates process binary data in a computer by performing Boolean logic operations like AND, OR, NOT, and XOR.</p>
@@ -213,9 +262,47 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span> <span class="nb">id</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="n">grade</span><span class="p">:</span> <span class="mi">11</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nb">id</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="s1">&#39;Bill&#39;</span><span class="p">,</span> <span class="n">grade</span><span class="p">:</span> <span class="mi">9</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nb">id</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="s1">&#39;Maxwell&#39;</span><span class="p">,</span> <span class="n">grade</span><span class="p">:</span> <span class="mi">9</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nb">id</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="s1">&#39;Maxine&#39;</span><span class="p">,</span> <span class="n">grade</span><span class="p">:</span> <span class="mi">10</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nb">id</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="s1">&#39;Sally&#39;</span><span class="p">,</span> <span class="n">grade</span><span class="p">:</span> <span class="mi">9</span> <span class="p">},</span>
+  <span class="p">{</span> <span class="nb">id</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="s1">&#39;Mary&#39;</span><span class="p">,</span> <span class="n">grade</span><span class="p">:</span> <span class="mi">12</span> <span class="p">}</span>
+
+<span class="p">];</span>
+<span class="n">const</span> <span class="n">filterGrades</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">filter</span><span class="p">((</span><span class="n">item</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="n">item</span><span class="o">.</span><span class="n">grade</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">;</span>
+<span class="p">});</span>
+
+<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">filterGrades</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Github-Pages">Github Pages<a class="anchor-link" href="#Github-Pages"> </a></h2><p>Another hosting service website other than Github is GoDaddy. GoDaddy is a website hosting service that includes free domain and SSL. A benefit and advantage of GoDaddy is its user-friendly website builder. It allows users to easily create and customize professional websites without needing  coding or technical expertise. This feature sets it apart from other hosting services website that may require more technical knowledge to create a website.</p>
+
+<pre><code>{ id: 1, name: 'Bob', grade: 11}, { id: 6, name: 'Mary', grade: 12 }</code></pre>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Github-Pages">Github Pages<a class="anchor-link" href="#Github-Pages"> </a></h2><p>Another hosting service website other than Github is GoDaddy. GoDaddy is a website hosting service that includes free domain and SSL. A benefit and advantage of GoDaddy is its user-friendly website builder. It allows users to easily create and customize professional websites without needing  coding or technical expertise. This feature sets it apart from other hosting services website that may require more technical knowledge to create a website. This is just one example of a hosting service website, there are several more such as Netlify, which has its own benefits, advantages, and features.</p>
 
 </div>
 </div>
@@ -223,6 +310,80 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="APIs">APIs<a class="anchor-link" href="#APIs"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">tabulate</span> <span class="kn">import</span> <span class="n">tabulate</span>
+
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://country-location-api.p.rapidapi.com/location&quot;</span>
+
+<span class="n">querystring</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;country&quot;</span><span class="p">:</span><span class="s2">&quot;canada&quot;</span><span class="p">}</span>
+
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s2">&quot;content-type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/octet-stream&quot;</span><span class="p">,</span>
+	<span class="s2">&quot;X-RapidAPI-Key&quot;</span><span class="p">:</span> <span class="s2">&quot;8ca68e698emsh077b34dcb5cedc7p176bfdjsn4a11c2cb1bef&quot;</span><span class="p">,</span>
+	<span class="s2">&quot;X-RapidAPI-Host&quot;</span><span class="p">:</span> <span class="s2">&quot;country-location-api.p.rapidapi.com&quot;</span>
+<span class="p">}</span>
+<span class="n">table</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="s1">&#39;Capital&#39;</span><span class="p">,</span> <span class="s1">&#39;Currencies&#39;</span><span class="p">,</span> <span class="s1">&#39;Languages&#39;</span><span class="p">,</span> <span class="s1">&#39;Population&#39;</span><span class="p">,</span> <span class="s1">&#39;Region&#39;</span><span class="p">,</span> <span class="s1">&#39;Subregion&#39;</span><span class="p">],</span> 
+         <span class="p">[</span><span class="s1">&#39;Canada&#39;</span><span class="p">,</span> <span class="s1">&#39;Ottawa&#39;</span><span class="p">,</span> <span class="s1">&#39;Canadian Dollars&#39;</span><span class="p">,</span> <span class="s1">&#39;English, French&#39;</span><span class="p">,</span> <span class="mi">38005238</span><span class="p">,</span> <span class="s1">&#39;Americas&#39;</span><span class="p">,</span> <span class="s1">&#39;Northern America&#39;</span><span class="p">],</span> 
+         <span class="p">[</span><span class="s1">&#39;United States&#39;</span><span class="p">,</span> <span class="s1">&#39;Washington DC&#39;</span><span class="p">,</span> <span class="s1">&#39;US Dollars&#39;</span><span class="p">,</span> <span class="s1">&#39;English&#39;</span><span class="p">,</span> <span class="mi">58005238</span><span class="p">,</span> <span class="s1">&#39;Americas&#39;</span><span class="p">,</span> <span class="s1">&#39;Northern America&#39;</span><span class="p">],</span> 
+         <span class="p">[</span><span class="s1">&#39;Mexico&#39;</span><span class="p">,</span> <span class="s1">&#39;Mexico City&#39;</span><span class="p">,</span> <span class="s1">&#39;Pesos&#39;</span><span class="p">,</span> <span class="s1">&#39;Spanish&#39;</span><span class="p">,</span> <span class="mi">1269362</span><span class="p">,</span> <span class="s1">&#39;Americas&#39;</span><span class="p">,</span> <span class="s1">&#39;Southern America&#39;</span><span class="p">]]</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">querystring</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tabulate</span><span class="p">(</span><span class="n">table</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;location&#39;: {&#39;capital&#39;: &#39;Ottawa&#39;, &#39;currencies&#39;: [&#39;Canadian dollar&#39;], &#39;languages&#39;: [&#39;English&#39;, &#39;French&#39;], &#39;name&#39;: &#39;Canada&#39;, &#39;population&#39;: 38005238, &#39;region&#39;: &#39;Americas&#39;, &#39;subregion&#39;: &#39;Northern America&#39;}}
+-------------  -------------  ----------------  ---------------  ----------  --------  ----------------
+Country        Capital        Currencies        Languages        Population  Region    Subregion
+Canada         Ottawa         Canadian Dollars  English, French  38005238    Americas  Northern America
+United States  Washington DC  US Dollars        English          58005238    Americas  Northern America
+Mexico         Mexico City    Pesos             Spanish          1269362     Americas  Southern America
+-------------  -------------  ----------------  ---------------  ----------  --------  ----------------
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This is a <a href="https://rapidapi.com/Emiledaou/api/country-location-api/">third party API</a> about country location and details that I used above.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Data-Compression">Data Compression<a class="anchor-link" href="#Data-Compression"> </a></h2><p>Lossless images are in a JPG image format, consisting of lossy data. JPGs are always in a lossless format. They work by shorter code segments that are compressed and also go back into their original form. A few examples of lossless compression algorithms include deflate and Huffman coding.</p>
+<p>Whereas lossy image, which means it is in a PNG format. PNG uses a compression algorithm which keeps the picture's original data without information/data being lost. Lossy algorithms work by removing the unneccesary data and unimportant data, this plays a key role in compression. This type of compression can be seen in audious and pictures and examples of lossy compression algorithms include MP3 and JPEG files.</p>
+<p>This is an example of a lossy versus lossless data compression.</p>
+<p><img src="https://cdn.discordapp.com/attachments/1010052426490982461/1101779451815137290/Screen_Shot_2023-04-29_at_12.58.04_AM.png" alt="exampleoflossyvlossless" /></p>
+
 </div>
 </div>
 </div>
