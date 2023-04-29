@@ -6,43 +6,50 @@ permalink: /BinaryButtons/
 
 <html>
 <form>
-      <label for="1binary">FIRST Binary Number:</label>
-      <input type="text" id="1binary" name="1binary"><br><br>
-      <label for="2binary">SECOND Binary Number:</label>
-      <input type="text" id="2binary" name="2binary"><br><br>
-      <input type="button" value="Multiply" onclick="binaryMultiply()">
-      <input type="button" value="Divide" onclick="binaryDivide()">
-      <p id="Bresult"></p>
-      <p id="Dresult"></p>
+      <label for="binary1">Binary Number 1:</label>
+      <input type="text" id="binary1" name="binary1"><br><br>
+      <label for="binary2">Binary Number 2:</label>
+      <input type="text" id="binary2" name="binary2"><br><br>
+      <input type="button" value="Multiply Binary Numbers" onclick="binaryMultiplication()">
+      <input type="button" value="Multiply Binary Numbers" onclick="binaryDivision()">
+      <p id="binary_result"></p>
+      <p id="decimal_result"></p>
 </form>
 
 <script>
   
-  function binaryMultiply() {
-  var binary_1 = document.getElementId("1binary").value;
-  var binary_2 = document.getElementId("2binary").value;
+  function binaryMultiplication() {
+  // Get the values of the two input fields
+  var binary1 = document.getElementById("binary1").value;
+  var binary2 = document.getElementById("binary2").value;
   
-  var dProduct = parseInteger(binary_1, 2) * parseInteger(binary_2, 2);
+  // Convert the binary strings to decimal integers and multiply them
+  var decimalProduct = parseInt(binary1, 2) * parseInt(binary2, 2);
   
-  var bProduct = dProduct.toString(2);
+  // Convert the decimal product back to a binary string and display it
+  var binaryProduct = decimalProduct.toString(2);
   
-  document.getElementId("Bresult").innerHTML = "Product of binary numbers: " + bProduct;
-  document.getElementId("Dresult").innerHTML = "Product in base 10: " + dProduct;
+  document.getElementById("binary_result").innerHTML = "Product of binary numbers: " + binaryProduct;
+  document.getElementById("decimal_result").innerHTML = "Product in base 10: " + decimalProduct;
 }
 
-  function binaryDivide() {
-  var binary_1 = document.getElementId("1binary").value;
-  var binary_2 = document.getElementId("2binary").value;
+  function binaryDivision() {
+  // Get the values of the two input fields
+  var binary1 = document.getElementById("binary1").value;
+  var binary2 = document.getElementById("binary2").value;
 
-  var decimalQuotient = parseInteger(binary_1, 2) / parseInteger(binary_2, 2);
+  // Convert the binary strings to decimal integers and divide them
+  var decimalQuotient = parseInt(binary1, 2) / parseInt(binary2, 2);
 
+  // Check if the quotient is an integer
   if (decimalQuotient % 1 === 0) {
+    // Convert the decimal quotient back to a binary string and display it
     var binaryQuotient = decimalQuotient.toString(2);
-    document.getElementId("Bresult").innerHTML = "Quotient of binary numbers: " + binaryQuotient;
-    document.getElementId("Dresult").innerHTML = "Quotient in base 10: " + decimalQuotient;
+    document.getElementById("binary_result").innerHTML = "Quotient of binary numbers: " + binaryQuotient;
+    document.getElementById("decimal_result").innerHTML = "Quotient in base 10: " + decimalQuotient;
   } else {
-    document.getElementId("Bresult").innerHTML = "Binary division is incorrect.";
-    document.getElementId("Dresult").innerHTML = "Quotient is a decimal.";
+    document.getElementById("binary_result").innerHTML = "The binary division is not exact.";
+    document.getElementById("decimal_result").innerHTML = "The quotient is a decimal number.";
   }
 }
 
