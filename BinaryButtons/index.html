@@ -4,20 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Style Buttons | Amitha</title>
+<title>Binary Buttons | Amitha</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Style Buttons" />
+<meta property="og:title" content="Binary Buttons" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Amitha Sanka" />
 <meta property="og:description" content="Amitha Sanka" />
-<link rel="canonical" href="https://amitha-sanka.github.io/repository_1/StyleButtons/" />
-<meta property="og:url" content="https://amitha-sanka.github.io/repository_1/StyleButtons/" />
+<link rel="canonical" href="https://amitha-sanka.github.io/repository_1/BinaryButtons/" />
+<meta property="og:url" content="https://amitha-sanka.github.io/repository_1/BinaryButtons/" />
 <meta property="og:site_name" content="Amitha" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Style Buttons" />
+<meta property="twitter:title" content="Binary Buttons" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Amitha Sanka","headline":"Style Buttons","url":"https://amitha-sanka.github.io/repository_1/StyleButtons/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Amitha Sanka","headline":"Binary Buttons","url":"https://amitha-sanka.github.io/repository_1/BinaryButtons/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/repository_1/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://amitha-sanka.github.io/repository_1/feed.xml" title="Amitha" /><link rel="shortcut icon" type="image/x-icon" href="/repository_1/images/amithafavicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -72,15 +72,54 @@ window.onload = wrap_img;
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Style Buttons</h1>
+    <h1 class="post-title">Binary Buttons</h1>
   </header>
 
   <div class="post-content">
-    <p><a href="https://cdn.discordapp.com/attachments/1010052426490982461/1101398553596788816/Screen_Shot_2023-04-27_at_11.44.26_PM.png">White Background</a></p>
+    <html>
+<form>
+      <label for="1binary">FIRST Binary Number:</label>
+      <input type="text" id="1binary" name="1binary" /><br /><br />
+      <label for="2binary">SECOND Binary Number:</label>
+      <input type="text" id="2binary" name="2binary" /><br /><br />
+      <input type="button" value="Multiply" onclick="binaryMultiply()" />
+      <input type="button" value="Divide" onclick="binaryDivide()" />
+      <p id="Bresult"></p>
+      <p id="Dresult"></p>
+</form>
 
-<p><a href="https://cdn.discordapp.com/attachments/1010052426490982461/1101398553596788816/Screen_Shot_2023-04-27_at_11.44.26_PM.png">Yellow Background</a></p>
+<script>
+  
+  function binaryMultiply() {
+  var 1binary = document.getElementById("1binary").value;
+  var 2binary = document.getElementById("2binary").value;
+  
+  var decimalProduct = parseInt(1binary, 2) * parseInt(2binary, 2);
+  
+  var binaryProduct = decimalProduct.toString(2);
+  
+  document.getElementById("Bresult").innerHTML = "Product of binary numbers: " + binaryProduct;
+  document.getElementById("Dresult").innerHTML = "Product in base 10: " + decimalProduct;
+}
 
-<p><a href="https://cdn.discordapp.com/attachments/1010052426490982461/1101398553596788816/Screen_Shot_2023-04-27_at_11.44.26_PM.png">Green Background</a></p>
+  function binaryDivide() {
+  var 1binary = document.getElementById("1binary").value;
+  var 2binary = document.getElementById("2binary").value;
+
+  var decimalQuotient = parseInt(1binary, 2) / parseInt(2binary, 2);
+
+  if (decimalQuotient % 1 === 0) {
+    var binaryQuotient = decimalQuotient.toString(2);
+    document.getElementById("Bresult").innerHTML = "Quotient of binary numbers: " + binaryQuotient;
+    document.getElementById("Dresult").innerHTML = "Quotient in base 10: " + decimalQuotient;
+  } else {
+    document.getElementById("Bresult").innerHTML = "The binary division is not exact.";
+    document.getElementById("Dresult").innerHTML = "The quotient is a decimal number.";
+  }
+}
+
+    </script>
+</html>
 
   </div>
 
