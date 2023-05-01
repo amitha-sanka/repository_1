@@ -129,22 +129,7 @@ window.onload = wrap_img;
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h1"><a href="#Pandas">Pandas </a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#before-we-start-this-portion-of-the-lesson:">before we start this portion of the lesson: </a></li>
-<li class="toc-entry toc-h2"><a href="#Overview:">Overview: </a></li>
 <li class="toc-entry toc-h2"><a href="#Learning-Objectives:">Learning Objectives: </a></li>
-<li class="toc-entry toc-h2"><a href="#Question">Question </a>
-<ul>
-<li class="toc-entry toc-h6"><a href="#(should-be-all-odf-you-because-all-of-you-have-used-it-in-this-class-before.-)">(should be all odf you because all of you have used it in this class before. ) </a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#what-is-pandas?">what is pandas? </a></li>
-<li class="toc-entry toc-h2"><a href="#Question-#2-&-3:">Question #2 &amp; 3: </a></li>
-<li class="toc-entry toc-h2"><a href="#but-why-is-pandas-useful?">but why is pandas useful? </a></li>
-<li class="toc-entry toc-h2"><a href="#Question-#4:">Question #4: </a></li>
-<li class="toc-entry toc-h2"><a href="#how-do-i-flipping-use-it?-its-so-hard,-my-puny-brain-cant-understand-it">how do i flipping use it? its so hard, my puny brain cant understand it </a></li>
-<li class="toc-entry toc-h2"><a href="#example-code-on-how-to-load-a-csv-into-a-chart">example code on how to load a csv into a chart </a></li>
-<li class="toc-entry toc-h2"><a href="#how-to-manipulate-the-data-in-pandas.">how to manipulate the data in pandas. </a></li>
-<li class="toc-entry toc-h2"><a href="#how-do-i-put-it-into-a-chart-😩">how do i put it into a chart 😩 </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h1"><a href="#Completed-Hacks">Completed Hacks </a>
@@ -176,10 +161,8 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="before-we-start-this-portion-of-the-lesson:">
-<a class="anchor" href="#before-we-start-this-portion-of-the-lesson:" aria-hidden="true"><span class="octicon octicon-link"></span></a>before we start this portion of the lesson:<a class="anchor-link" href="#before-we-start-this-portion-of-the-lesson:"> </a>
-</h2>
-<p>check if you have pip installed since we are going to be installing some libraries today!!!!!!
+<p>before we start this portion of the lesson:
+check if you have pip installed since we are going to be installing some libraries today!!!!!!
 if you arnt sure if you have pip, check it by running this command:</p>
 <div class="highlight"><pre><span></span>pip
 </pre></div>
@@ -193,10 +176,8 @@ if you arnt sure if you have pip, check it by running this command:</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Overview:">
-<a class="anchor" href="#Overview:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview:<a class="anchor-link" href="#Overview:"> </a>
-</h2>
-<p>Pandas is a powerful tool in Python that is used for data analysis and manipulation. In this lesson, we will explore how to use Pandas to work with datasets, analyze them, and visualize the results.</p>
+<p>Overview:
+Pandas is a powerful tool in Python that is used for data analysis and manipulation. In this lesson, we will explore how to use Pandas to work with datasets, analyze them, and visualize the results.</p>
 <h2 id="Learning-Objectives:">
 <a class="anchor" href="#Learning-Objectives:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Learning Objectives:<a class="anchor-link" href="#Learning-Objectives:"> </a>
 </h2>
@@ -214,22 +195,17 @@ if you arnt sure if you have pip, check it by running this command:</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Question">
-<a class="anchor" href="#Question" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question<a class="anchor-link" href="#Question"> </a>
-</h2>
-<p>Who here has used numpy????</p>
-<h6 id="(should-be-all-odf-you-because-all-of-you-have-used-it-in-this-class-before.-)">
-<a class="anchor" href="#(should-be-all-odf-you-because-all-of-you-have-used-it-in-this-class-before.-)" aria-hidden="true"><span class="octicon octicon-link"></span></a>(should be all odf you because all of you have used it in this class before. )<a class="anchor-link" href="#(should-be-all-odf-you-because-all-of-you-have-used-it-in-this-class-before.-)"> </a>
-</h6>
+<p>Question
+Who here has used numpy????</p>
+<p>(should be all odf you because all of you have used it in this class before. )</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="what-is-pandas?">
-<a class="anchor" href="#what-is-pandas?" aria-hidden="true"><span class="octicon octicon-link"></span></a>what is pandas?<a class="anchor-link" href="#what-is-pandas?"> </a>
-</h2>
+<p>what is pandas?</p>
 <p>no not this</p>
 <p>this:</p>
 <ul>
@@ -248,9 +224,7 @@ if you arnt sure if you have pip, check it by running this command:</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Question-#2-&amp;-3:">
-<a class="anchor" href="#Question-#2-&amp;-3:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question #2 &amp; 3:<a class="anchor-link" href="#Question-#2-&amp;-3:"> </a>
-</h2>
+<p>Question #2 &amp; 3:</p>
 <ul>
 <li>which companies use pandas? </li>
 <li>what is pandas?</li>
@@ -262,9 +236,7 @@ if you arnt sure if you have pip, check it by running this command:</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="but-why-is-pandas-useful?">
-<a class="anchor" href="#but-why-is-pandas-useful?" aria-hidden="true"><span class="octicon octicon-link"></span></a>but why is pandas useful?<a class="anchor-link" href="#but-why-is-pandas-useful?"> </a>
-</h2>
+<p>but why is pandas useful?</p>
 <ul>
 <li>it can provides tools for handling and manipulating tabular data, which is a common format for storing and analyzing data.</li>
 <li>it can handle different types of data, including CSV files and databases.</li>
@@ -281,9 +253,7 @@ if you arnt sure if you have pip, check it by running this command:</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Question-#4:">
-<a class="anchor" href="#Question-#4:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Question #4:<a class="anchor-link" href="#Question-#4:"> </a>
-</h2>
+<p>Question #4:</p>
 <ul>
 <li>why is pandas useful? </li>
 </ul>
@@ -294,10 +264,8 @@ if you arnt sure if you have pip, check it by running this command:</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="how-do-i-flipping-use-it?-its-so-hard,-my-puny-brain-cant-understand-it">
-<a class="anchor" href="#how-do-i-flipping-use-it?-its-so-hard,-my-puny-brain-cant-understand-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>how do i flipping use it? its so hard, my puny brain cant understand it<a class="anchor-link" href="#how-do-i-flipping-use-it?-its-so-hard,-my-puny-brain-cant-understand-it"> </a>
-</h2>
-<p>it is actually really simple</p>
+<p>how do i flipping use it? its so hard, my puny brain cant understand it
+it is actually really simple</p>
 <p>here is numpy doing simple math:</p>
 
 </div>
@@ -381,9 +349,8 @@ pip install pandas
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="example-code-on-how-to-load-a-csv-into-a-chart">
-<a class="anchor" href="#example-code-on-how-to-load-a-csv-into-a-chart" aria-hidden="true"><span class="octicon octicon-link"></span></a>example code on how to load a csv into a chart<a class="anchor-link" href="#example-code-on-how-to-load-a-csv-into-a-chart"> </a>
-</h2>
+<p>example code on how to load a csv into a chart</p>
+
 </div>
 </div>
 </div>
@@ -457,9 +424,8 @@ Name: Name, dtype: int64
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="how-to-manipulate-the-data-in-pandas.">
-<a class="anchor" href="#how-to-manipulate-the-data-in-pandas." aria-hidden="true"><span class="octicon octicon-link"></span></a>how to manipulate the data in pandas.<a class="anchor-link" href="#how-to-manipulate-the-data-in-pandas."> </a>
-</h2>
+<p>how to manipulate the data in pandas.</p>
+
 </div>
 </div>
 </div>
@@ -561,10 +527,8 @@ Name: Age, dtype: float64
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="how-do-i-put-it-into-a-chart-😩">
-<a class="anchor" href="#how-do-i-put-it-into-a-chart-%F0%9F%98%A9" aria-hidden="true"><span class="octicon octicon-link"></span></a>how do i put it into a chart 😩<a class="anchor-link" href="#how-do-i-put-it-into-a-chart-%F0%9F%98%A9"> </a>
-</h2>
-<p>here is how:</p>
+<p>how do i put it into a chart 😩
+here is how:</p>
 
 </div>
 </div>
