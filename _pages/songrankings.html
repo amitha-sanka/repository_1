@@ -52,10 +52,6 @@ permalink: /Sort Songs/
     const tracksContainer = document.getElementById('tracksContainer');
     const sortButton = document.getElementById('sortButton');
 
-
-    searchBar.addTrack('submit', function(song) {
-      song.stopDefault(); 
-
     searchBar.addEventListener('submit', function(event) {
       event.preventDefault();
       const trackName = document.getElementById('trackName').value;
@@ -136,6 +132,6 @@ permalink: /Sort Songs/
         tracks.sort((a, b) => a.name.localeCompare(b.name));
         displayTracks(tracks);
     }
-</script>
+    </script>
 </body>
 </html>
