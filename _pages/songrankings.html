@@ -120,7 +120,7 @@ permalink: /Project/
     }
 
     function sortTracks() {
-        tracks.sort((a, b) => a.popularity.localCompare(b.name));
+        tracks.sort((a, b) => a.popularity.localCompare(b.popularity));
         displayTracks(tracks);
     }
 </script>
