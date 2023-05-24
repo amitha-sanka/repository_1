@@ -10,17 +10,29 @@ permalink: /Project/
 
 
 
-<div class="topnav">
-    <a class="active" href="#song">Enter Song Name:</a>
-    <input type="text" placeholder="Search...">
-    <input type="Submit" class="file_submit">
+ 
+<form align="center" id="searchBar">
+    <label for="trackName">Track:</label>
+    <input type="text" id="trackName" name="trackName" required>
+    <button class="btn" type="submit">Search...</button>
     <button class="button" align="center" id="sortButton">Sort</button>
+</form>
 
-</div>
 
 
 <script>
-    getTrack("Let it go");
+
+
+    const searchBar = document.getElementById('searchBar');
+    
+    searchBar.addEventListener('submit', function(event) {
+      event.preventDefault();
+      const trackName = document.getElementById('trackName').value;
+      getTrack(trackName);
+    });
+
+
+
 
     function getTrack(trackName) {
         const url = 'https://spotify23.p.rapidapi.com/search/?q=' + trackName + '&type=multi&offset=0&limit=10&numberOfTopResults=5';
