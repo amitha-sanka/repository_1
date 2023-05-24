@@ -52,8 +52,8 @@ permalink: /Sort Songs/
     const tracksContainer = document.getElementById('tracksContainer');
     const sortButton = document.getElementById('sortButton');
 
-    searchBar.addTrack('submit', function(event) {
-      event.preventDefault();
+    searchBar.addTrack('submit', function(song) {
+      song.stopDefault(); 
       const trackName = document.getElementById('trackName').value;
       getTrack(trackName);
     });
