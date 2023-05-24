@@ -8,6 +8,12 @@ permalink: /Project/
 <head>
     <h1>Search and Ranks Songs!</h1>
 <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+
     .track-box {
         text-align: center;
         color: beige;
@@ -108,8 +114,6 @@ permalink: /Project/
 
             const trackPic = document.createElement('pic');
             trackPic.classList.add('track-pic');
-            console.log(track.album.images[0].url)
-            console.log(track.album)
             
             trackPic.src = track.album.images[0].url;
             trackPic.alt = track.name;
@@ -125,7 +129,7 @@ permalink: /Project/
     }
 
     function sortTracks() {
-        tracks.sort((a, b) => a.popularity.localCompare(b.popularity));
+        tracks.sort((a, b) => a.popularity.localeCompare(b.popularity));
         displayTracks(tracks);
     }
 </script>
