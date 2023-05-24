@@ -1,5 +1,5 @@
 ---
-title: Sort
+title: Seach & Sort
 layout: page
 permalink: /Sort Songs/
 ---
@@ -52,13 +52,17 @@ permalink: /Sort Songs/
     const tracksContainer = document.getElementById('tracksContainer');
     const sortButton = document.getElementById('sortButton');
 
+
     searchBar.addTrack('submit', function(song) {
       song.stopDefault(); 
+
+    searchBar.addEventListener('submit', function(event) {
+      event.preventDefault();
       const trackName = document.getElementById('trackName').value;
       getTrack(trackName);
     });
 
-    sortButton.addTrack('click', function() {
+    sortButton.addEventListener('click', function() {
       sortTracks();
     });
 
@@ -135,4 +139,3 @@ permalink: /Sort Songs/
 </script>
 </body>
 </html>
-
