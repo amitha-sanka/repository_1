@@ -733,8 +733,6 @@
   
 
   
-
-  
   
 
   
@@ -743,8 +741,8 @@
   
 
   
-      ,"page9": {
-          "title": "Sort",
+      ,"page8": {
+          "title": "Seach & Sort",
           "content": "⋆⁺₊⋆Search &amp; Sort Tracks!⋆⁺₊⋆ . . Track: Submit Sort Tracks .",
           "url": "https://amitha-sanka.github.io/repository_1/Sort%20Songs/",
           "relUrl": "/Sort Songs/",
@@ -754,20 +752,9 @@
   
 
   
-      ,"page10": {
-          "title": "Style Buttons",
-          "content": "White Background . Yellow Background . Green Background .",
-          "url": "https://amitha-sanka.github.io/repository_1/StyleButtons/",
-          "relUrl": "/StyleButtons/",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page11": {
+      ,"page9": {
           "title": "submenu",
-          "content": "Jupyter Notebook that shows personal usage of Jupyter JavaScript kernel . Link . Post that uses HTML fragments and JavaScript data to build a table . Link .",
+          "content": "Jupyter Notebook that shows personal usage of Jupyter JavaScript kernel . Link . Post that uses HTML fragments and JavaScript data to build a table . Link . Style Buttons . White Background . Yellow Background . Green Background .",
           "url": "https://amitha-sanka.github.io/repository_1/submenu/",
           "relUrl": "/submenu/",
           "date": ""
@@ -778,7 +765,7 @@
   
 
   
-      ,"page13": {
+      ,"page11": {
           "title": "APCSP Vocabulary",
           "content": "Unit 2 Binary &amp; Data . . Bits: a 0/1 value | Bytes: 8 bits | Hexadecimal: name of the numbering system that is base 16 | Nibbles: four-bit binary number | . Binary Numbers: . Unsigned Integer: 32-bit non-negative integer(0 or positive numbers) in the range of 0 to 2^32-1 | Signed Integer: 32-bit integer in the range of -(2^31) = -2147483648 to (2^31) – 1=2147483647 which contains positive or negative numbers | Floating Point: data format to represent real numbers with both an integer and fractional component | . Binary Data Abstractions . Boolean expressions can be written as equivalent conditional statements | ASCII: returns a readable version of any object (Strings, Tuples, Lists) | Unicode: specification that aims to list every character used by human languages and give each character its own unique code | RGB: tuple of 3 components | . Data Compression . Lossy: (not discussed yet) | Lossless: (not discussed yet) | . Unit 3 Algorithm &amp; Programming . . Variables: an abstraction inside a program that can hold a value. Each variable has associated data storage that represents one value at a time, but that value can be a list or other collection that in turn contains multiple values | Data Types: there are different data types; numeric, sequence, mapping, set | Assignment Operators: allows a program to change the value represented to a variable | . Managing Complexity with Variables . Lists: allow consistent computations and changing the number of variables and helps multiple items that are related to each other to be treated a single value | 2D Lists: two-dimensional data structure stored linearly in the memory | Dictionaries: used to store data values in key:value pairs | Class: an outline for creating a new object | Algorithms: a process or set of rules to be followed in calculations or other problem solving operations, especially by a computer | Sequence: steps in order, for example, doing the first step then the second then the third, etc. | Selection: is a decision or question. At some point in an algorithm there may need to be a question because the algorithm has reached a step where one or more options are available | Iteration: repeating steps, or instructions over and over again | Expressions: combination of operators and operands | Comparison Operators: Greater than or equal to: True if left operand is greater than or equal to the right AND Less than or equal to: True if left operand is less than or equal to the right | . Booleans Expressions and Selection, Booleans Expressions and Iteration, Truth Tables . Characters: one single unit of a text or character string, or individual characters | Strings: sequence of characters, consists of letters, numbers, and special characters | Length: ordered sequence of elements, elements are variables | Concatenation: operation of joining two strings together | Upper: converts all lowercase characters in a string into uppercase characters | Lower: converts all of the characters to lowercase | . Traversing Strings . Python If: go through certain statements if the if expression is true | Elif: go through a statement no matter what, but the statement which is run depends on the if expression is true or false | . Else conditionals; Nested Selection Statements . Python For: repeats a function for a set number of times; I is the number of times repeated | While loops with Range, with List: used to repeat a section of code an unknown number of times until a specific condition is met | . Combining loops with conditionals to Break, Continue . Procedural Abstraction: provides a name for a process and allows a procedure to be only knowing what it does not, how it does it | Python Def procedures: a named group of programming instructions that may have parameters and return values. | Parameters: input values of a procedure | Return Values: values that a function returns when it completes | .",
           "url": "https://amitha-sanka.github.io/repository_1/APCSPVocabulary/",
@@ -809,7 +796,7 @@
   
 
   
-      ,"page22": {
+      ,"page20": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://amitha-sanka.github.io/repository_1/robots.txt",
