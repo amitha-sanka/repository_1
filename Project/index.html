@@ -76,7 +76,26 @@ window.onload = wrap_img;
   </header>
 
   <div class="post-content">
+    <html>
+<head>
     <h1>Search and Ranks Songs!</h1>
+<style>
+    .track-box {
+        text-align: center;
+        color: beige;
+    }
+
+    .track-pic {
+        width: 100%;
+        height: auto;
+    }
+    .container {
+        background-color: aliceblue;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px;
+    }
+</style>
+</head>
 
 <body>
 
@@ -89,13 +108,16 @@ window.onload = wrap_img;
 </form>
 
 
+<div id="tracksContainer" class="grid"></div>
 
 <script>
     const CLIENT_ID = '4034fb5829ee4eb2b2a2cfaa29336f4e';
     const CLIENT_SECRET = 'c7768173586d4b13b957dfa84340cd1b';
 
     const searchBar = document.getElementById('searchBar');
-    
+    const tracksContainer = document.getElementById('tracksContainer');
+    const sortButton = document.getElementById('sortButton');
+
     searchBar.addEventListener('submit', function(event) {
       event.preventDefault();
       const trackName = document.getElementById('trackName').value;
@@ -136,14 +158,46 @@ window.onload = wrap_img;
             .then(data => { 
             console.log(data)
               tracks = data.tracks.items;
+              displayTracks(tracks)
             })
             .catch(error => console.error(error));
         })
         .catch(error => console.error(error));
     }
+    function displayTracks(tracks) {
+        tracksContainer.innerHTML = '';
 
+        if (tracks.length === 0) {
+            tracks.Container.textContent = 'Track not found';
+            return;
+        }
+
+        tracks.forEach(track=> {
+            const trackBox = document.createElement('div');
+            trackBox.classList.add('track-box');
+
+            const trackPic = document.createElement('pic');
+            trackPic.classList.add('track-pic');
+            trackPic.src = track.pictures[0].url;
+            trackPic.alt = track.name;
+
+            const trackName = document.createElement('p');
+            trackName.textContent = track.name;
+
+            trackBox.appendChild(trackPic);
+            trackBox.appendChild(trackName);
+
+            tracksContainer.appendChild(trackBox);
+        });
+    }
+
+    function sortTracks() {
+        tracks.sort((a, b) => a.popularity.localCompare(b.name));
+        displayTracks(tracks);
+    }
 </script>
 </body>
+</html>
   </div>
 
 </article>
