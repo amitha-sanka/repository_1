@@ -21,7 +21,8 @@ permalink: /Project/
 
 
 <script>
-
+    const CLIENT_ID = '4034fb5829ee4eb2b2a2cfaa29336f4e';
+    const CLIENT_SECRET = 'c7768173586d4b13b957dfa84340cd1b';
 
     const searchBar = document.getElementById('searchBar');
     
@@ -35,22 +36,40 @@ permalink: /Project/
 
 
     function getTrack(trackName) {
-        const url = 'https://spotify23.p.rapidapi.com/search/?q=' + trackName + '&type=multi&offset=0&limit=10&numberOfTopResults=5';
-        const options = {
-        method: 'GET',
+        // const url = 'https://spotify23.p.rapidapi.com/search/?q=' + trackName + '&type=multi&offset=0&limit=10&numberOfTopResults=5';
+        // const options = {
+        // method: 'GET',
+        // headers: {
+        //     'X-RapidAPI-Key': '8ca68e698emsh077b34dcb5cedc7p176bfdjsn4a11c2cb1bef',
+        //     'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
+        // }
+        // };
+        const parameters = {
+        method: 'POST',
         headers: {
-            'X-RapidAPI-Key': '8ca68e698emsh077b34dcb5cedc7p176bfdjsn4a11c2cb1bef',
-            'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
-        }
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: 'grant_type=client_credentials&client_id=' + CLIENT_ID + '&client_secret=' + CLIENT_SECRET
         };
-        console.log("hello")
-        try {
-            const response = await fetch(url, options);
-            const result = await response.text();
-            console.log(result);
-        } catch (error) {
-            console.error(error);
-        } 
+        fetch('https://accounts.spotify.com/api/token', parameters)
+        .then(result => result.json())
+        .then(data => {
+          const accessToken = data.access_token;
+          const albumsEndpoint = `https://api.spotify.com/v1/search?q=${encodeURIComponent(trackName)}&type=track`;
+
+          fetch(albumsEndpoint, {
+            headers: {
+              'Authorization': 'Bearer ' + accessToken
+            }
+          })
+            .then(response => response.json())
+            .then(data => { 
+            console.log(data)
+              tracks = data.tracks.items;
+            })
+            .catch(error => console.error(error));
+        })
+        .catch(error => console.error(error));
     }
 
 </script>
