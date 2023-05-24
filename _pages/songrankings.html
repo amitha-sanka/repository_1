@@ -52,7 +52,9 @@ permalink: /Project/
       getTrack(trackName);
     });
 
-
+    sortButton.addEventListener('click', function() {
+      sortTracks();
+    });
 
 
     function getTrack(trackName) {
@@ -106,6 +108,9 @@ permalink: /Project/
 
             const trackPic = document.createElement('pic');
             trackPic.classList.add('track-pic');
+            console.log(track.album.images[0].url)
+            console.log(track.album)
+            
             trackPic.src = track.album.images[0].url;
             trackPic.alt = track.name;
 
