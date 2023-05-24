@@ -201,7 +201,7 @@ window.onload = wrap_img;
     }
 
     function sortTracks() {
-        tracks.sort((a, b) => a.popularity.localeCompare(b.popularity));
+        tracks.sort((a, b) => a.name.localeCompare(b.name));
         displayTracks(tracks);
     }
 </script>
