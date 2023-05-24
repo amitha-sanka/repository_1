@@ -124,7 +124,9 @@ window.onload = wrap_img;
       getTrack(trackName);
     });
 
-
+    sortButton.addEventListener('click', function() {
+      sortTracks();
+    });
 
 
     function getTrack(trackName) {
@@ -178,6 +180,9 @@ window.onload = wrap_img;
 
             const trackPic = document.createElement('pic');
             trackPic.classList.add('track-pic');
+            console.log(track.album.images[0].url)
+            console.log(track.album)
+            
             trackPic.src = track.album.images[0].url;
             trackPic.alt = track.name;
 
