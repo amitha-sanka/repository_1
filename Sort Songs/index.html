@@ -124,13 +124,13 @@ window.onload = wrap_img;
     const tracksContainer = document.getElementById('tracksContainer');
     const sortButton = document.getElementById('sortButton');
 
-    searchBar.addEventListener('submit', function(event) {
+    searchBar.addTrack('submit', function(event) {
       event.preventDefault();
       const trackName = document.getElementById('trackName').value;
       getTrack(trackName);
     });
 
-    sortButton.addEventListener('click', function() {
+    sortButton.addTrack('click', function() {
       sortTracks();
     });
 
@@ -207,6 +207,8 @@ window.onload = wrap_img;
 </script>
 </body>
 </html>
+
+
   </div>
 
 </article>
