@@ -204,7 +204,7 @@ window.onload = wrap_img;
         })
         .catch(error => console.error(error));
     }
-    function displayTracks(tracks) {
+    function displaysortTracks(tracks) {
         tracksContainer.innerHTML = '';
 
         if (tracks.length === 0) {
@@ -234,7 +234,7 @@ window.onload = wrap_img;
 
     function sortTracks() {
         tracks.sort((a, b) => a.name.localeCompare(b.name));
-        displayTracks(tracks);
+        displaysortTracks(tracks);
     }
     </script>
 </body>
