@@ -44,7 +44,7 @@ permalink: /Button/
                 {
                     background: linear-gradient(90deg,#755bea,#ff72c0);
                 }
-                span
+                .anim
                 {
                     position: absolute;
                     background:#fff;
@@ -71,7 +71,7 @@ permalink: /Button/
         </style>
     </head>
     <body>
-        <button href="#">Button</button>
+        <button href="#" class="anim">Button</button>
         <button href="#"class="abutton">Button</button>
         <script type="text/javascript">
             const buttons = document.querySelectorAll('button');
@@ -80,7 +80,7 @@ permalink: /Button/
                   let x = eclientX - e.target.offsetLeft;
                   let y = e.clientX - e.target.offsetTop;
 
-                  let ripples = document.createElement('button');
+                  let ripples = document.createElement('anim');
                   ripples.style.left = x + 'px';
                   ripples.style.top = y + 'px';
                   this.appendChild(ripples);
