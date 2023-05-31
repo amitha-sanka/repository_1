@@ -35,17 +35,18 @@ permalink: /Button/
 
   let rtdeg = 0;
 
-setInterval(() => {
+  setInterval(() => {
 
-    rtdeg++;
-    console.log(rtdeg);
-    // img.style.transform = 'rotate('+rtdeg+'deg)';
-    img.style.transform = 'rotate($(rtdeg)deg)';
+      rtdeg++;
+
+      if(rtdeg == 360){
+          rtdeg = 0;
+      }
+      console.log(rtdeg);
+      // img.style.transform = 'rotate('+rtdeg+'deg)';
+      img.style.transform = 'rotate($(rtdeg)deg)';
 
 
-}, 100);
-
-
-
+  }, 100);
 </script>
 </html>
