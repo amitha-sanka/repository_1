@@ -9,87 +9,45 @@ permalink: /Button/
         <meta charset="utf-8">
         <title>Button Effect</title>
         <style>
-            @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-                *
-                {
-                    margin: 0;
-                    padding: 0;
-                    font-family: 'Poppins', sans-serif;
-                }
-                body
-                {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    min-height: 100vh;
-                    flex-direction: column;
-                    background: #f1bee3;
-                }
-                .abutton
-                {
-                position: relative; 
-                display: inline-block;
-                padding: 12px 36px;
-                margin: 10px 0;
-                color: #fff;
-                text-decoration: none;
-                text-transform: uppercase;
-                font-size: 18px;
-                letter-spacing: 2px;
-                border-radius: 40px;
-                background: linear-gradient(90deg,#0162c8,#55e7fc);
-                
-                }
-                button:nth-child(2)
-                {
-                    background: linear-gradient(90deg,#755bea,#ff72c0);
-                }
-                .anim
-                {
-                    position: absolute;
-                    background:#fff;
-                    transform: translate(-90%, -90%);
-                    pointer-events: none;
-                    border-radius: 50%;
-                    animation: animate 3s linear infinite; 
-                }
-                @keyframes animate 
-                {
-                    0%
-                    {
-                        width: 0px;
-                        height: 0px;
-                        opacity: 0.5;
-                    }
-                    100%
-                    {
-                        width: 500px;
-                        height: 500px;
-                        opacity: 0;
-                    }
-                }
+           .button {
+            position: relative;
+            background-color: #04AA6D;
+            border: none;
+            font-size: 28px;
+            color: #FFFFFF;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            -webkit-transition-duration: 0.4s; /* Safari */
+            transition-duration: 0.4s;
+            text-decoration: none;
+            overflow: hidden;
+            cursor: pointer;
+            }
+
+            .button:after {
+            content: "";
+            background: #90EE90;
+            display: block;
+            position: absolute;
+            padding-top: 300%;
+            padding-left: 350%;
+            margin-left: -20px!important;
+            margin-top: -120%;
+            opacity: 0;
+            transition: all 0.8s
+            }
+
+            .button:active:after {
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            transition: 0s
+            }
         </style>
     </head>
     <body>
         <button href="#" class="abutton anim">Button</button>
-        <button href="#"class="abutton anim">Button</button>
-        <script type="text/javascript">
-            const buttons = document.querySelectorAll('button');
-            buttons.forEach(btn=> {
-                btn.addEventListener('click', function(e) {
-                  let x = eclientX - e.target.offsetLeft;
-                  let y = e.clientX - e.target.offsetTop;
-
-                  let ripples = document.createElement('anim');
-                  ripples.style.left = x + 'px';
-                  ripples.style.top = y + 'px';
-                  this.appendChild(ripples);
-
-                  setTimeout(()=> {
-                    ripples.remove()
-                  },1000);
-                })
-            })
-        </script>
+        <button href="#"class="button">Button</button>
     </body>
 </html>
