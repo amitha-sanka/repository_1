@@ -58,8 +58,36 @@ permalink: /Sort Songs/
         border: 0;
         box-shadow: transparent 0 0 0 3px,rgb(255, 0, 170) 0 5px 10px;
         box-sizing: border-box;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
 
       }
+      .button:after {
+        content: "";
+        background: #90EE90;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px!important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+        }
+      .button:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+        }
+
+
+
+
+
 </style>
 </head>
 
@@ -69,7 +97,7 @@ permalink: /Sort Songs/
 <form align="center" id="searchBar">
     <label for="trackName">Enter Track:</label>
     <input type="text" id="trackName" name="trackName" required>
-    <button class="btn" type="submit">Submit</button>
+    <button class="button" type="submit">Submit</button>
     <button class="button" align="center" id="sortButton">Sort Tracks</button>
 </form>
 
