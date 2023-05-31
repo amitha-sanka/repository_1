@@ -71,10 +71,10 @@ permalink: /Button/
         </style>
     </head>
     <body>
-        <a href="#">Button</a>
-        <a href="#">Button</a>
+        <button href="#">Button</button>
+        <button href="#">Button</button>
         <script type="text/javascript">
-            const buttons = document.querySelectorAll('a');
+            const buttons = document.querySelectorAll('button');
             buttons.forEach(btn=> {
                 btn.addEventListener('click', function(e) {
                   let x = eclientX - e.target.offsetLeft;
