@@ -722,7 +722,7 @@
   
       ,"page3": {
           "title": "Button",
-          "content": "&lt;!doctype html&gt; . Button Effect . Button &lt;button href=&quot;#&quot;class=&quot;abutton anim&quot;&gt;Button&lt;/button&gt; .",
+          "content": "&lt;!doctype html&gt; . Button Effect . Button &lt;button href=&quot;#&quot;class=&quot;button&quot;&gt;Button&lt;/button&gt; .",
           "url": "https://amitha-sanka.github.io/repository_1/Button/",
           "relUrl": "/Button/",
           "date": ""
