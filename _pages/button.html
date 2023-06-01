@@ -20,7 +20,7 @@ permalink: /Button/
       }
       .rotate-container{
           text-align: center;
-          /* transform: rotate(180deg); */
+          transform: rotate(180deg);    
       }
     </style>
 </head>
@@ -37,14 +37,14 @@ permalink: /Button/
 
   setInterval(() => {
 
-      rtdeg++;
+    rtdeg++;
 
-      if(rtdeg == 360){
-          rtdeg = 0;
-      }
-      console.log(rtdeg);
-      // img.style.transform = 'rotate('+rtdeg+'deg)';
-      img.style.transform = 'rotate($(rtdeg)deg)';
+    //if(rtdeg == 360){
+    //    rtdeg = 0;
+    // }
+    //console.log(rtdeg);
+    // img.style.transform = 'rotate('+rtdeg+'deg)';
+    img.style.transform = 'rotate($(rtdeg)deg)';
 
 
   }, 100);
