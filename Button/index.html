@@ -93,7 +93,7 @@ window.onload = wrap_img;
       }
       .rotate-container{
           text-align: center;
-          /* transform: rotate(180deg);  */  
+          transform: rotate(360deg);   
       }
     </style>
 </head>
@@ -103,7 +103,7 @@ window.onload = wrap_img;
     </div>
 </body>
 <script>
-    const img = document.querySelector('.rotate-image');
+  const img = document.querySelector('.rotate-image');
   // console.log(img);
 
   let rtdeg = 0;
@@ -115,7 +115,7 @@ window.onload = wrap_img;
     //if(rtdeg == 360){
     //    rtdeg = 0;
     // }
-    //console.log(rtdeg);
+    console.log(rtdeg);
     // img.style.transform = 'rotate('+rtdeg+'deg)';
     img.style.transform = 'rotate(${rtdeg}deg)';
 
