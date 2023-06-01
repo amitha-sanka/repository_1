@@ -101,8 +101,35 @@ window.onload = wrap_img;
     <div class="rotate-container">
         <img src="../images/record.png" alt="" class="rotate-image">
     </div>
-    <script src="rotate.js"></script>
 </body>
+<script>
+    const img = document.querySelector('.rotate-image');
+  // console.log(img);
+
+  let rtdeg = 0;
+
+  setInterval(() => {
+
+    rtdeg++;
+
+    //if(rtdeg == 360){
+    //    rtdeg = 0;
+    // }
+    //console.log(rtdeg);
+    // img.style.transform = 'rotate('+rtdeg+'deg)';
+    img.style.transform = 'rotate(${rtdeg}deg)';
+
+  }, 100);
+</script>
+
+
+
+
+
+
+
+
+
 </html>
   </div>
 

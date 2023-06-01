@@ -14,5 +14,4 @@ const img = document.querySelector('.rotate-image');
     // img.style.transform = 'rotate('+rtdeg+'deg)';
     img.style.transform = 'rotate(${rtdeg}deg)';
 
-
   }, 100);
