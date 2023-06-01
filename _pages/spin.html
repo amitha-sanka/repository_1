@@ -1,0 +1,39 @@
+---
+title: Spin
+layout: page
+permalink: /Spin/
+---
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+		<style>
+			#image {
+				animation: rotation 1s linear 0s infinite;
+				animation-play-state: paused;
+			}
+ 
+			@keyframes rotation {
+				to {
+					transform: rotate(360deg)
+				}
+			}
+		</style>
+	</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<a href="https://sourcecodester.com" class="navbar-brand">Sourcecodester</a> 
+		</div>
+	</nav>
+	<div class="col-md-3"></div>
+	<div class="col-md-6 well">
+		<h3 class="text-primary">How to make your Image Spin Continuously</h3>
+		<hr style="border-top:1px dotted #ccc;"/>
+		<button class="btn btn-default" onclick="rotateImage(this);">Spin</button>
+		<br />
+		<img style="margin:20px;" src="../images/record.png" id="image" height="400px" width="400px"/>
+	</div>
+<script src="script.js"></script>
+</body>
+</html>
