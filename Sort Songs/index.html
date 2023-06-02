@@ -358,6 +358,7 @@ window.onload = wrap_img;
 
     sortButton.addEventListener('click', function() {
       sortTracks();
+      displayTracks(tracks);
     });
 
     let tracks = [];
@@ -428,7 +429,7 @@ window.onload = wrap_img;
 
     function sortTracks() {
         tracks.sort((a, b) => a.name.localeCompare(b.name));
-        displayTracks(tracks);
+       
     }
     splitCharacters();
   animateOnScroll();
