@@ -186,6 +186,19 @@ window.onload = wrap_img;
           text-align: left;
           /* transform: rotate(360deg);    */
       }
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+      .rotate-image3{
+          width: 300px;
+          height: 300px;
+      }
+      .rotate-container3{
+          text-align: right;
+          /* transform: rotate(360deg);    */
+      }
  /* BASIC STYLES
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
     * 
@@ -256,6 +269,10 @@ window.onload = wrap_img;
     <img src="../images/note.png" alt="" class="rotate-image2">
   </div>
 
+  <div class="rotate-container3">
+    <img src="../images/headphones.png" alt="" class="rotate-image3">
+  </div>
+
 <form align="center" id="searchBar">
     <label for="trackName">Enter Track:</label>
     <input type="text" id="trackName" name="trackName" required>
@@ -303,7 +320,25 @@ window.onload = wrap_img;
     // img.style.transform = 'rotate(${rtdeg}deg)';
 
   }, 100);
-  
+
+  const imgg = document.querySelector('.rotate-imag32');
+  // console.log(img);
+
+  let rtdeg1 = 0;
+
+  setInterval(() => {
+
+    rtdeg1++;
+
+    //if(rtdeg == 360){
+    //    rtdeg = 0;
+    // }
+    console.log(rtdeg1);
+    imgg.style.transform = 'rotate('+rtdeg1+'deg)';
+    // img.style.transform = 'rotate(${rtdeg}deg)';
+
+  }, 100);
+
     const CLIENT_ID = '4034fb5829ee4eb2b2a2cfaa29336f4e';
     const CLIENT_SECRET = 'c7768173586d4b13b957dfa84340cd1b';
 
