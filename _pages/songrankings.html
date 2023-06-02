@@ -286,6 +286,7 @@ permalink: /Sort Songs/
 
     sortButton.addEventListener('click', function() {
       sortTracks();
+      displayTracks(tracks);
     });
 
     let tracks = [];
@@ -356,7 +357,7 @@ permalink: /Sort Songs/
 
     function sortTracks() {
         tracks.sort((a, b) => a.name.localeCompare(b.name));
-        displayTracks(tracks);
+       
     }
     splitCharacters();
   animateOnScroll();
