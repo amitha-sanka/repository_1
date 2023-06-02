@@ -368,69 +368,68 @@ permalink: /Sort Songs/
     const targets = document.querySelectorAll("[data-split]"); // specifies which items are animating 
 
     for (const target of targets) {
-      let string = '<span class="inner"><span class="front">'; // 
-      let counter = 0; // 
+      let string = '<span class="inner"><span class="front">'; //loop to iterate over the targets array
+      let counter = 0; // initializes a string variable and a counter variable.
 
-      const targetContent = target.textContent;
+      const targetContent = target.textContent; // identifying the text that is being animated
       const words = targetContent.trim().split(" "); // splitting the string into words 
 
-      words.forEach(function (word, wordIndex, wordArray) {
+      words.forEach(function (word, wordIndex, wordArray) { // loop, animates each individual word to flow
         const chars = word.split("");
-        chars.forEach(function (char, charIndex, charArray) {
-          string += `<span class="char" style="--index: ${++counter};">${char}</span>`;
+        chars.forEach(function (char, charIndex, charArray) { // animates by each character to create ripple, flow effect
+          string += `<span class="char" style="--index: ${++counter};">${char}</span>`; // inside the forEach loop and appends a string to the variable
 
-          // the last character of the last word, reset the counter
           if (
-            wordIndex === wordArray.length - 1 &&
-            charIndex === charArray.length - 1
+            wordIndex === wordArray.length - 1 && //  this checks if the wordIndex is equal to the last index of the wordArray.
+            charIndex === charArray.length - 1 // this checks if the charIndex is equal to the last index of the charArray
           ) {
-            counter = 0;
+            counter = 0; // if both conditions are true, it sets the counter variable to 0
           }
         });
 
-        // add a space between each word unless it's the last one
-        if (wordIndex !== wordArray.length - 1) {
-          string += "<span>&nbsp;</span>";
+        if (wordIndex !== wordArray.length - 1) { // says if the wordIndex is not equal to the last index of the wordArray 
+          string += "<span>&nbsp;</span>"; // if this condition is true, it adds a <span> tag
         }
       });
-      string += "</span>"; //end front
+      string += "</span>"; //end front span 
 
-      string += '<span class="back">';
-      words.forEach(function (word, wordIndex, wordArray) {
-        const chars = word.split(""); // splits the string by characters 
-        chars.forEach(function (char) {
-          string += `<span class="char" style="--index: ${++counter};">${char}</span>`;
+      string += '<span class="back">'; // string appended with html span tag
+      words.forEach(function (word, wordIndex, wordArray) { // iterating over the words array, with parameters word, wordIndex, and wordArray 
+        const chars = word.split(""); // splits the string into an array of characters by using split 
+        chars.forEach(function (char) { // iterates over each element in the array and performs a function 
+          string += `<span class="char" style="--index: ${++counter};">${char}</span>`;// iterating over each element in chars array to build string for +- operator
         });
-        if (wordIndex !== wordArray.length - 1) {
-          string += "<span>&nbsp;</span>";
+        if (wordIndex !== wordArray.length - 1) { // checks if the wordIndex is not equal to the last index of the wordArray. 
+          //if  condition is true, it adds a <span> element containing a space to the string.
+          string += "<span>&nbsp;</span>"; // takes the values from the right of the and adds it to the variable on the left 
         }
       });
 
-      string += "</span>"; // end back
-      string += "</span>"; // end inner
-      target.innerHTML = string; // .inner helps avoid inconsistencies
+      string += "</span>"; // end back and closes each character into a span element tag
+      string += "</span>"; // end inner and closes each character into a span element tag
+      target.innerHTML = string; // assigns the value of string to the innerHTML of the target element,
     }
   }
 
   function animateOnScroll() { // function for animation 
     const targets = document.querySelectorAll('[data-split-type="scroll"]'); // hover during scroll 
     const isAnimatedClass = "is-animated"; // this class ensures that the hover effect only applies to headings 
-    const threshold = 0.5;
+    const threshold = 0.5; // animates for this amount 
 
-    function callback(entries, observer) { // this function allows the hover effect recurr
-      entries.forEach((entry) => {
-        const elem = entry.target;
-        if (entry.intersectionRatio >= threshold) {
-          elem.classList.add(isAnimatedClass);
-        } else {
-          elem.classList.remove(isAnimatedClass);
+    function callback(entries, observer) { // taking the two parameters; entries and observer
+      entries.forEach((entry) => { // entries array is iterated using the forEach method
+        const elem = entry.target; // for each entry object, retrieves the  element using entry.target and assigning it to the elem variable
+        if (entry.intersectionRatio >= threshold) { // if greater than or equal to threshold, the element shows up 
+          elem.classList.add(isAnimatedClass); // the class is added 
+        } else { // if below the threshold, the element is gone now
+          elem.classList.remove(isAnimatedClass); // class is removed
         }
       });
     }
 
-    const observer = new IntersectionObserver(callback, { threshold });
-    for (const target of targets) {
-      observer.observe(target);
+    const observer = new IntersectionObserver(callback, { threshold }); // creating an instance of the IntersectionObserver class with 'callback' function with the threshold 
+    for (const target of targets) {// iterates over the targets array
+      observer.observe(target); // calls observe 
     }
   }
 </script>
