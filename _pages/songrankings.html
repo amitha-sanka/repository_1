@@ -88,6 +88,19 @@ permalink: /Sort Songs/
         opacity: 1;
         transition: 0s
         }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .rotate-image{
+            width: 300px;
+            height: 300px;
+        }
+        .rotate-container{
+            text-align: center;
+            /* transform: rotate(360deg);    */
+        }
  /* BASIC STYLES
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
     * 
@@ -145,11 +158,14 @@ permalink: /Sort Songs/
       opacity: 0;
       transform: translateY(-10%) skewX(-55deg);
     }
+    
 </style>
 </head>
 
 <body>
-
+  <div class="rotate-container">
+    <img src="../images/record.png" alt="" class="rotate-image">
+  </div>
  
 <form align="center" id="searchBar">
     <label for="trackName">Enter Track:</label>
@@ -163,6 +179,23 @@ permalink: /Sort Songs/
   
 
 <script>
+  const img = document.querySelector('.rotate-image');
+  // console.log(img);
+
+  let rtdeg = 0;
+
+  setInterval(() => {
+
+    rtdeg++;
+
+    //if(rtdeg == 360){
+    //    rtdeg = 0;
+    // }
+    console.log(rtdeg);
+    img.style.transform = 'rotate('+rtdeg+'deg)';
+    // img.style.transform = 'rotate(${rtdeg}deg)';
+
+  }, 100);
     const CLIENT_ID = '4034fb5829ee4eb2b2a2cfaa29336f4e';
     const CLIENT_SECRET = 'c7768173586d4b13b957dfa84340cd1b';
 
