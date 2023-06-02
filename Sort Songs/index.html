@@ -289,12 +289,12 @@ window.onload = wrap_img;
   
 
 <script>
-  const img = document.querySelector('.rotate-image');
+  const img = document.querySelector('.rotate-image'); // finding the css code for the music note 
   // console.log(img);
 
-  let rtdeg = 0;
+  let rtdeg = 0; // starting position of the animation 
 
-  setInterval(() => {
+  setInterval(() => { // seconds of the animation 
 
     rtdeg++;
 
@@ -302,17 +302,17 @@ window.onload = wrap_img;
     //    rtdeg = 0;
     // }
     // console.log(rtdeg);
-    img.style.transform = 'rotate('+rtdeg+'deg)';
+    img.style.transform = 'rotate('+rtdeg+'deg)'; // rotating function - this is creates the rotation animation
     // img.style.transform = 'rotate(${rtdeg}deg)';
 
   }, 100);
 
-  const image = document.querySelector('.rotate-image2');
+  const image = document.querySelector('.rotate-image2'); // finding the css code for the record player 
   // console.log(img);
 
-  let retdeg = 0;
+  let retdeg = 0; // starting position of the animation
 
-  setInterval(() => {
+  setInterval(() => { // seconds of the animation 
 
     retdeg++;
 
@@ -320,17 +320,17 @@ window.onload = wrap_img;
     //    rtdeg = 0;
     // }
     // console.log(retdeg);
-    image.style.transform = 'rotate('+retdeg+'deg)';
+    image.style.transform = 'rotate('+retdeg+'deg)'; // rotating function - this is creates the rotation animation
     // img.style.transform = 'rotate(${rtdeg}deg)';
 
   }, 100);
 
-  const imgg = document.querySelector('.rotate-image5');
+  const imgg = document.querySelector('.rotate-image5'); // finding the css code for the headphones
   // console.log(img);
 
-  let rtdeg5 = 0;
+  let rtdeg5 = 0; // starting position of the animation
 
-  setInterval(() => {
+  setInterval(() => { // seconds of the animation 
     
     rtdeg5++;
 
@@ -338,31 +338,31 @@ window.onload = wrap_img;
     //    rtdeg5 = 0;
     // }
     // console.log(rtdeg5);
-    imgg.style.transform = 'rotate('+rtdeg5+'deg)';
+    imgg.style.transform = 'rotate('+rtdeg5+'deg)'; // rotating function - this is creates the rotation animation
     // img.style.transform = 'rotate(${rtdeg5}deg)';
 
   }, 100);
 
-    const CLIENT_ID = '4034fb5829ee4eb2b2a2cfaa29336f4e';
+    const CLIENT_ID = '4034fb5829ee4eb2b2a2cfaa29336f4e'; // declaring the variables for my api  
     const CLIENT_SECRET = 'c7768173586d4b13b957dfa84340cd1b';
 
-    const searchBar = document.getElementById('searchBar');
-    const tracksContainer = document.getElementById('tracksContainer');
-    const sortButton = document.getElementById('sortButton');
+    const searchBar = document.getElementById('searchBar'); // referencing div ids about the search bar 
+    const tracksContainer = document.getElementById('tracksContainer'); // referencing div ids about the tracks button
+    const sortButton = document.getElementById('sortButton'); // referencing div ids about the sort alphabetically button
 
-    searchBar.addEventListener('submit', function(event) {
-      event.preventDefault();
-      const trackName = document.getElementById('trackName').value;
-      getTrack(trackName);
+    searchBar.addEventListener('submit', function(event) { // listening to events when someone searches something in the query
+      event.preventDefault(); // returns boolean if the event of searching was called in addEventListener for the searchbar 
+      const trackName = document.getElementById('trackName').value; // getting the track name from search bar 
+      getTrack(trackName); // gets the track name  
     });
 
-    sortButton.addEventListener('click', function() {
-      event.preventDefault();
-      sortTracks();
-      displayTracks(tracks);
+    sortButton.addEventListener('click', function() { // listening to events when someone clicks the "Sort Alphabetically" button
+      event.preventDefault(); // returns boolean if the event of searching was called in addEventListener for the sortButton
+      sortTracks(); // sorts the tracks 
+      displayTracks(tracks); // displays the track name in the track box 
     });
 
-    var tracks = [];
+    var tracks = []; // building an array
     function getTrack(trackName) {
         // const url = 'https://spotify23.p.rapidapi.com/search/?q=' + trackName + '&type=multi&offset=0&limit=10&numberOfTopResults=5';
         // const options = {
@@ -373,7 +373,7 @@ window.onload = wrap_img;
         // }
         // };
         const parameters = {
-        method: 'POST',
+        method: 'POST', // input and fetched my spotify api that supported generating the tracks
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
         },
@@ -400,57 +400,58 @@ window.onload = wrap_img;
         })
         .catch(error => console.error(error));
     }
-    function displayTracks(tracks) {
-        tracksContainer.innerHTML = '';
+    function displayTracks(tracks) { // calls the displayTracks function
+        tracksContainer.innerHTML = ''; // empty results 
 
-        if (tracks.length === 0) {
+        if (tracks.length === 0) { // saying if 0 characters are entered, output will be "Track not found"
             tracks.Container.textContent = 'Track not found';
             return;
         }
 
         tracks.forEach(track=> {
-            const trackBox = document.createElement('div');
-            trackBox.classList.add('track-box');
+            const trackBox = document.createElement('div'); // creating divs for each track result 
+            trackBox.classList.add('track-box'); // making a empty track box
 
-            const trackPic = document.createElement('pic');
-            trackPic.classList.add('track-pic');
+            const trackPic = document.createElement('pic'); // creating pic for each track
+            trackPic.classList.add('track-pic'); // adding a box and a picture to the list 
             
-            trackPic.src = track.album.images[0].url;
-            trackPic.alt = track.name;
+            trackPic.src = track.album.images[0].url; // picture for each track 
+            trackPic.alt = track.name; // track picture for each track generated 
 
-            const trackName = document.createElement('p');
-            trackName.textContent = track.name;
+            const trackName = document.createElement('p'); // displaying track title for each track found
+            trackName.textContent = track.name; // track title for each track generated 
 
-            trackBox.appendChild(trackPic);
-            trackBox.appendChild(trackName);
+            trackBox.appendChild(trackPic); // adding the track pictures 
+            trackBox.appendChild(trackName); // adding the track names and putting the names and picture inside the track box 
 
-            tracksContainer.appendChild(trackBox);
+
+            tracksContainer.appendChild(trackBox); // adding the track boxes into the container
         });
     }
 
-    function sortTracks() {
-        tracks.sort((a, b) => a.name.localeCompare(b.name));
+    function sortTracks() { // calls the sortTracks function
+        tracks.sort((a, b) => a.name.localeCompare(b.name)); // sorts tracks alphabetically, a = track, b = track, comparing a and b, locale compare is sorting alphabetically
        
     }
-    splitCharacters();
-  animateOnScroll();
+    splitCharacters(); // flow effect for hover animation 
+  animateOnScroll(); // text hover animation 
 
-  function splitCharacters() {
-    const targets = document.querySelectorAll("[data-split]");
+  function splitCharacters() { // calls the splitCharacters function
+    const targets = document.querySelectorAll("[data-split]"); // 
 
     for (const target of targets) {
-      let string = '<span class="inner"><span class="front">';
-      let counter = 0;
+      let string = '<span class="inner"><span class="front">'; // 
+      let counter = 0; // 
 
       const targetContent = target.textContent;
-      const words = targetContent.trim().split(" ");
+      const words = targetContent.trim().split(" "); // splitting the string into words 
 
       words.forEach(function (word, wordIndex, wordArray) {
         const chars = word.split("");
         chars.forEach(function (char, charIndex, charArray) {
           string += `<span class="char" style="--index: ${++counter};">${char}</span>`;
 
-          // if we're on the last character of the last word, reset the counter
+          // the last character of the last word, reset the counter
           if (
             wordIndex === wordArray.length - 1 &&
             charIndex === charArray.length - 1
@@ -468,7 +469,7 @@ window.onload = wrap_img;
 
       string += '<span class="back">';
       words.forEach(function (word, wordIndex, wordArray) {
-        const chars = word.split("");
+        const chars = word.split(""); // splits the string by characters 
         chars.forEach(function (char) {
           string += `<span class="char" style="--index: ${++counter};">${char}</span>`;
         });
