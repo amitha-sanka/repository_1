@@ -499,9 +499,10 @@ window.onload = wrap_img;
       });
     }
 
-    const observer = new IntersectionObserver(callback, { threshold }); // creating an instance of the IntersectionObserver class with 'callback' function with the threshold 
+    const observer = new IntersectionObserver(callback, { threshold }); // creating an instance of the IntersectionObserver class with 
+    // 'callback' function with the threshold 
     for (const target of targets) {// iterates over the targets array
-      observer.observe(target); // calls observe 
+      observer.observe(target); // calls observe for each 
     }
   }
 </script>
