@@ -14,36 +14,36 @@ permalink: /Button/
           padding: 0;
           box-sizing: border-box;
       }
-      .rotate-image{
+      .rotate-image3{
           width: 300px;
           height: 300px;
       }
-      .rotate-container{
-          text-align: left;
+      .rotate-container3{
+          text-align: right;
           /* transform: rotate(360deg);    */
       }
     </style>
 </head>
 <body>
-    <div class="rotate-container2">
-        <img src="../images/note.png" alt="" class="rotate-image2">
+    <div class="rotate-container3">
+        <img src="../images/headphones.png" alt="" class="rotate-image3">
     </div>
 </body>
 <script>
-  const img = document.querySelector('.rotate-image2');
+  const imgg = document.querySelector('.rotate-imag32');
   // console.log(img);
 
-  let rtdeg = 0;
+  let rtdeg1 = 0;
 
   setInterval(() => {
 
-    rtdeg++;
+    rtdeg1++;
 
     //if(rtdeg == 360){
     //    rtdeg = 0;
     // }
-    console.log(rtdeg);
-    img.style.transform = 'rotate('+rtdeg+'deg)';
+    console.log(rtdeg1);
+    imgg.style.transform = 'rotate('+rtdeg1+'deg)';
     // img.style.transform = 'rotate(${rtdeg}deg)';
 
   }, 100);
