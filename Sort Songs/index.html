@@ -433,7 +433,7 @@ window.onload = wrap_img;
         tracks.sort((a, b) => a.name.localeCompare(b.name)); // sorts tracks alphabetically, a = track, b = track, comparing a and b, locale compare is sorting alphabetically
        
     }
-    splitCharacters(); // flow effect for hover animation 
+    splitCharacters(); // function for flow effect for hover animation 
   animateOnScroll(); // text hover animation 
 
   function splitCharacters() { // calls the splitCharacters function
@@ -480,16 +480,16 @@ window.onload = wrap_img;
 
       string += "</span>"; // end back
       string += "</span>"; // end inner
-      target.innerHTML = string;
+      target.innerHTML = string; // .inner helps avoid inconsistencies
     }
   }
 
-  function animateOnScroll() {
-    const targets = document.querySelectorAll('[data-split-type="scroll"]');
-    const isAnimatedClass = "is-animated";
+  function animateOnScroll() { // function for animation 
+    const targets = document.querySelectorAll('[data-split-type="scroll"]'); // hover during scroll 
+    const isAnimatedClass = "is-animated"; // this class ensures that the hover effect only applies to headings 
     const threshold = 0.5;
 
-    function callback(entries, observer) {
+    function callback(entries, observer) { // this function allows the hover effect recurr
       entries.forEach((entry) => {
         const elem = entry.target;
         if (entry.intersectionRatio >= threshold) {
