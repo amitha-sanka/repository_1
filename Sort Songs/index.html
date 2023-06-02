@@ -192,12 +192,14 @@ window.onload = wrap_img;
             padding: 0;
             box-sizing: border-box;
         }
-        .rotate-image3{
+        .rotate-image5{
             width: 300px;
             height: 300px;
         }
-        .rotate-container3{
+        .rotate-container9{
             float: right;
+            margin-right: 20;
+            position: relative; top: -50px;
             /* transform: rotate(360deg);    */
         }
  /* BASIC STYLES
@@ -270,8 +272,8 @@ window.onload = wrap_img;
     <img src="../images/note.png" alt="" class="rotate-image2">
   </div>
 
-  <div class="rotate-container3">
-    <img src="../images/headphones.png" alt="" class="rotate-image3">
+  <div class="rotate-container9">
+    <img src="../images/headphones.png" alt="" class="rotate-image5">
   </div>
 
 <form align="center" id="searchBar">
@@ -322,21 +324,21 @@ window.onload = wrap_img;
 
   }, 100);
 
-  const imgg = document.querySelector('.rotate-imag32');
+  const imgg = document.querySelector('.rotate-image5');
   // console.log(img);
 
-  let rtdeg1 = 0;
+  let rtdeg5 = 0;
 
   setInterval(() => {
+    
+    rtdeg5++;
 
-    rtdeg1++;
-
-    //if(rtdeg == 360){
-    //    rtdeg = 0;
+    //if(rtdeg5 == 360){
+    //    rtdeg5 = 0;
     // }
-    console.log(rtdeg1);
-    imgg.style.transform = 'rotate('+rtdeg1+'deg)';
-    // img.style.transform = 'rotate(${rtdeg}deg)';
+    console.log(rtdeg5);
+    imgg.style.transform = 'rotate('+rtdeg5+'deg)';
+    // img.style.transform = 'rotate(${rtdeg5}deg)';
 
   }, 100);
 
@@ -499,10 +501,6 @@ window.onload = wrap_img;
       observer.observe(target);
     }
   }
-
-
-
-
 </script>
 </body>
 </html>

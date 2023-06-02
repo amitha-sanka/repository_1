@@ -87,11 +87,11 @@ window.onload = wrap_img;
             padding: 0;
             box-sizing: border-box;
         }
-        .rotate-image{
+        .rotate-image5{
             width: 300px;
             height: 300px;
         }
-        .rotate-container{
+        .rotate-container9{
             float: right;
             margin-right: 20;
             position: relative; top: -50px;
@@ -100,25 +100,25 @@ window.onload = wrap_img;
     </style>
 </head>
 <body>
-    <div class="rotate-container">
-        <img src="../images/headphones.png" alt="" class="rotate-image">
+    <div class="rotate-container9">
+        <img src="../images/headphones.png" alt="" class="rotate-image5">
     </div>
 </body>
 <script>
-    const img = document.querySelector('.rotate-image');
+    const imgg = document.querySelector('.rotate-image5');
     // console.log(img);
 
-    let rtdeg = 0;
+    let rtdeg5 = 0;
 
     setInterval(() => {
-        rtdeg++;
+        rtdeg5++;
 
-        //if(rtdeg == 360){
-        //    rtdeg = 0;
+        //if(rtdeg5 == 360){
+        //    rtdeg5 = 0;
         // }
-        console.log(rtdeg);
-        img.style.transform = 'rotate('+rtdeg+'deg)';
-        // img.style.transform = 'rotate(${rtdeg}deg)';
+        console.log(rtdeg5);
+        imgg.style.transform = 'rotate('+rtdeg5+'deg)';
+        // img.style.transform = 'rotate(${rtdeg5}deg)';
 
     }, 100);
 </script>
